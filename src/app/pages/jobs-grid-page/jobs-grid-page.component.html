@@ -1,0 +1,1839 @@
+<app-top-header />
+
+<app-navbar />
+
+<app-page-banner />
+
+<!-- Jobs -->
+ <!--
+<div class="container ptb-100">
+    <ul class="nav nav-tabs job-tablist d-flex justify-content-center mb-30">
+        <li class="nav-item">
+            <button class="nav-link" (click)="switchTab($event, 'tab1')" [ngClass]="{'active': currentTab === 'tab1'}">
+                All
+            </button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link" (click)="switchTab($event, 'tab2')" [ngClass]="{'active': currentTab === 'tab2'}">
+                Graphic Design
+            </button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link" (click)="switchTab($event, 'tab3')" [ngClass]="{'active': currentTab === 'tab3'}">
+                Video Editing
+            </button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link" (click)="switchTab($event, 'tab4')" [ngClass]="{'active': currentTab === 'tab4'}">
+                Web Development
+            </button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link" (click)="switchTab($event, 'tab5')" [ngClass]="{'active': currentTab === 'tab5'}">
+                Data Science
+            </button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link" (click)="switchTab($event, 'tab6')" [ngClass]="{'active': currentTab === 'tab6'}">
+                Marketing
+            </button>
+        </li>
+    </ul>
+    <div class="tab-content product-tab-content">
+        <div class="tab-pane" id="tab1" *ngIf="currentTab === 'tab1'">
+            <div class="row justify-content-center">
+                <div class="col-xl-4 col-md-6">
+                    <div class="job-card style-five d-flex flex-wrap align-items-center justify-content-between round-10 mb-30 transition">
+                        <div class="job-img-wrap position-relative index-1 round-4 overflow-hidden">
+                            <img src="img/jobs/job-1.png" alt="Job Image" class="round-4 transition">
+                            <div class="employer-logo-wrap position-absolute d-flex flex-wrap align-items-center">
+                                <div class="employer-logo bg-white d-flex flex-column align-items-center justify-content-center rounded-circle">
+                                    <img src="img/employer/solit-it.svg" alt="Employre Logo">
+                                </div>
+                                <span class="text-white fs-14 fw-medium">
+                                    Solit IT Solution
+                                </span>
+                                <a routerLink="/employer-details" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                            </div>
+                        </div>
+                        <div class="job-info">
+                            <ul class="job-metainfo list-unstyle">
+                                <li class="fs-13 fw-medium bg-gin">
+                                    Full Time
+                                </li>
+                                <li class="fs-13 fw-medium bg-mystic">
+                                    Urgent
+                                </li>
+                            </ul>
+                            <h3 class="fs-18 fw-medium">
+                                <a routerLink="/job-details-sidebar">
+                                    Full Stack Developer with Machine Learning Experience
+                                </a>
+                            </h3>
+                            <ul class="job-desc-meta list-unstyle">
+                                <li class="fs-14">
+                                    <img src="img/icons/map.svg" alt="Map Icon">
+                                    Bercelona, Spain
+                                </li>
+                                <li class="fs-14">
+                                    <img src="img/icons/calendar.svg" alt="Calendar Icon">
+                                    22 Jul, 2024
+                                </li>
+                                <li class="fs-14">
+                                    <img src="img/icons/cash.svg" alt="Money Icon">
+                                    <span class="fw-semibold">$56</span>/hour
+                                </li>
+                            </ul>
+                            <div class="job-action d-flex flex-wrap align-items-center justify-content-between">
+                                <a routerLink="/job-details-sidebar" class="btn style-two">
+                                    Apply Now
+                                </a>
+                                <button class="add-to-bookmark d-flex flex-column justify-content-center align-items-center rounded-circle transition">
+                                    <img src="img/icons/bookmark.svg" alt="Bookmark Icon" class="transition">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="job-card style-five d-flex flex-wrap align-items-center justify-content-between round-10 mb-30 transition">
+                        <div class="job-img-wrap position-relative index-1 round-4 overflow-hidden">
+                            <img src="img/jobs/job-2.png" alt="Job Image" class="round-4 transition">
+                            <div class="employer-logo-wrap position-absolute d-flex flex-wrap align-items-center">
+                                <div class="employer-logo bg-white d-flex flex-column align-items-center justify-content-center rounded-circle">
+                                    <img src="img/employer/supabase.svg" alt="Employre Logo">
+                                </div>
+                                <span class="text-white fs-14 fw-medium">
+                                    Supabase
+                                </span>
+                                <a routerLink="/employer-details" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                            </div>
+                        </div>
+                        <div class="job-info">
+                            <ul class="job-metainfo list-unstyle">
+                                <li class="fs-13 fw-medium bg-gin">
+                                    Full Time
+                                </li>
+                                <li class="fs-13 fw-medium bg-mystic">
+                                    Urgent
+                                </li>
+                            </ul>
+                            <h3 class="fs-18 fw-medium">
+                                <a routerLink="/job-details-sidebar">
+                                    UI/UX Designer with Research Experience in ML
+                                </a>
+                            </h3>
+                            <ul class="job-desc-meta list-unstyle">
+                                <li class="fs-14">
+                                    <img src="img/icons/map.svg" alt="Map Icon">
+                                    Torento, Canada
+                                </li>
+                                <li class="fs-14">
+                                    <img src="img/icons/calendar.svg" alt="Calendar Icon">
+                                    21 Jul, 2024
+                                </li>
+                                <li class="fs-14">
+                                    <img src="img/icons/cash.svg" alt="Money Icon">
+                                    <span class="fw-semibold">$45</span>/hour
+                                </li>
+                            </ul>
+                            <div class="job-action d-flex flex-wrap align-items-center justify-content-between">
+                                <a routerLink="/job-details-sidebar" class="btn style-two">
+                                    Apply Now
+                                </a>
+                                <button class="add-to-bookmark d-flex flex-column justify-content-center align-items-center rounded-circle transition">
+                                    <img src="img/icons/bookmark.svg" alt="Bookmark Icon" class="transition">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="job-card style-five d-flex flex-wrap align-items-center justify-content-between round-10 mb-30 transition">
+                        <div class="job-img-wrap position-relative index-1 round-4 overflow-hidden">
+                            <img src="img/jobs/job-3.png" alt="Job Image" class="round-4 transition">
+                            <div class="employer-logo-wrap position-absolute d-flex flex-wrap align-items-center">
+                                <div class="employer-logo bg-white d-flex flex-column align-items-center justify-content-center rounded-circle">
+                                    <img src="img/employer/google.svg" alt="Employre Logo">
+                                </div>
+                                <span class="text-white fs-14 fw-medium">
+                                    Google
+                                </span>
+                                <a routerLink="/employer-details" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                            </div>
+                        </div>
+                        <div class="job-info">
+                            <ul class="job-metainfo list-unstyle">
+                                <li class="fs-13 fw-medium bg-gin">
+                                    Full Time
+                                </li>
+                                <li class="fs-13 fw-medium bg-mystic">
+                                    Urgent
+                                </li>
+                            </ul>
+                            <h3 class="fs-18 fw-medium">
+                                <a routerLink="/job-details-sidebar">
+                                    Video Animation with VFX, Maya, 3D with Advanced knowledge
+                                </a>
+                            </h3>
+                            <ul class="job-desc-meta list-unstyle">
+                                <li class="fs-14">
+                                    <img src="img/icons/map.svg" alt="Map Icon">
+                                    Hampson, Spain
+                                </li>
+                                <li class="fs-14">
+                                    <img src="img/icons/calendar.svg" alt="Calendar Icon">
+                                    18 Jul, 2024
+                                </li>
+                                <li class="fs-14">
+                                    <img src="img/icons/cash.svg" alt="Money Icon">
+                                    <span class="fw-semibold">$65</span>/hour
+                                </li>
+                            </ul>
+                            <div class="job-action d-flex flex-wrap align-items-center justify-content-between">
+                                <a routerLink="/job-details-sidebar" class="btn style-two">
+                                    Apply Now
+                                </a>
+                                <button class="add-to-bookmark d-flex flex-column justify-content-center align-items-center rounded-circle transition">
+                                    <img src="img/icons/bookmark.svg" alt="Bookmark Icon" class="transition">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="job-card style-five d-flex flex-wrap align-items-center justify-content-between round-10 mb-30 transition">
+                        <div class="job-img-wrap position-relative index-1 round-4 overflow-hidden">
+                            <img src="img/jobs/job-4.png" alt="Job Image" class="round-4 transition">
+                            <div class="employer-logo-wrap position-absolute d-flex flex-wrap align-items-center">
+                                <div class="employer-logo bg-white d-flex flex-column align-items-center justify-content-center rounded-circle">
+                                    <img src="img/employer/mistral.svg" alt="Employre Logo">
+                                </div>
+                                <span class="text-white fs-14 fw-medium">
+                                    Mistral
+                                </span>
+                                <a routerLink="/employer-details" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                            </div>
+                        </div>
+                        <div class="job-info">
+                            <ul class="job-metainfo list-unstyle">
+                                <li class="fs-13 fw-medium bg-roman">
+                                    Part Time
+                                </li>
+                                <li class="fs-13 fw-medium bg-mystic">
+                                    Urgent
+                                </li>
+                            </ul>
+                            <h3 class="fs-18 fw-medium">
+                                <a routerLink="/job-details-sidebar">
+                                    Senior Marketing Manager Position Available at Leading Company
+                                </a>
+                            </h3>
+                            <ul class="job-desc-meta list-unstyle">
+                                <li class="fs-14">
+                                    <img src="img/icons/map.svg" alt="Map Icon">
+                                    Bercelona, Spain
+                                </li>
+                                <li class="fs-14">
+                                    <img src="img/icons/calendar.svg" alt="Calendar Icon">
+                                    15 Jul, 2024
+                                </li>
+                                <li class="fs-14">
+                                    <img src="img/icons/cash.svg" alt="Money Icon">
+                                    <span class="fw-semibold">$50</span>/hour
+                                </li>
+                            </ul>
+                            <div class="job-action d-flex flex-wrap align-items-center justify-content-between">
+                                <a routerLink="/job-details-sidebar" class="btn style-two">
+                                    Apply Now
+                                </a>
+                                <button class="add-to-bookmark d-flex flex-column justify-content-center align-items-center rounded-circle transition">
+                                    <img src="img/icons/bookmark.svg" alt="Bookmark Icon" class="transition">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="job-card style-five d-flex flex-wrap align-items-center justify-content-between round-10 mb-30 transition">
+                        <div class="job-img-wrap position-relative index-1 round-4 overflow-hidden">
+                            <img src="img/jobs/job-5.png" alt="Job Image" class="round-4 transition">
+                            <div class="employer-logo-wrap position-absolute d-flex flex-wrap align-items-center">
+                                <div class="employer-logo bg-white d-flex flex-column align-items-center justify-content-center rounded-circle">
+                                    <img src="img/employer/zoom.svg" alt="Employre Logo">
+                                </div>
+                                <span class="text-white fs-14 fw-medium">
+                                    Zoom
+                                </span>
+                                <a routerLink="/employer-details" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                            </div>
+                        </div>
+                        <div class="job-info">
+                            <ul class="job-metainfo list-unstyle">
+                                <li class="fs-13 fw-medium bg-gin">
+                                    Full Time
+                                </li>
+                                <li class="fs-13 fw-medium bg-mystic">
+                                    Urgent
+                                </li>
+                            </ul>
+                            <h3 class="fs-18 fw-medium">
+                                <a routerLink="/job-details-sidebar">
+                                    Remote Customer Service Specialist for Support Team
+                                </a>
+                            </h3>
+                            <ul class="job-desc-meta list-unstyle">
+                                <li class="fs-14">
+                                    <img src="img/icons/map.svg" alt="Map Icon">
+                                    New York, USA
+                                </li>
+                                <li class="fs-14">
+                                    <img src="img/icons/calendar.svg" alt="Calendar Icon">
+                                    15 Jul, 2024
+                                </li>
+                                <li class="fs-14">
+                                    <img src="img/icons/cash.svg" alt="Money Icon">
+                                    <span class="fw-semibold">$34</span>/hour
+                                </li>
+                            </ul>
+                            <div class="job-action d-flex flex-wrap align-items-center justify-content-between">
+                                <a routerLink="/job-details-sidebar" class="btn style-two">
+                                    Apply Now
+                                </a>
+                                <button class="add-to-bookmark d-flex flex-column justify-content-center align-items-center rounded-circle transition">
+                                    <img src="img/icons/bookmark.svg" alt="Bookmark Icon" class="transition">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="job-card style-five d-flex flex-wrap align-items-center justify-content-between round-10 mb-30 transition">
+                        <div class="job-img-wrap position-relative index-1 round-4 overflow-hidden">
+                            <img src="img/jobs/job-6.png" alt="Job Image" class="round-4 transition">
+                            <div class="employer-logo-wrap position-absolute d-flex flex-wrap align-items-center">
+                                <div class="employer-logo bg-white d-flex flex-column align-items-center justify-content-center rounded-circle">
+                                    <img src="img/employer/tonning.svg" alt="Employre Logo">
+                                </div>
+                                <span class="text-white fs-14 fw-medium">
+                                    Toning
+                                </span>
+                                <a routerLink="/employer-details" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                            </div>
+                        </div>
+                        <div class="job-info">
+                            <ul class="job-metainfo list-unstyle">
+                                <li class="fs-13 fw-medium bg-gin">
+                                    Full Time
+                                </li>
+                                <li class="fs-13 fw-medium bg-mystic">
+                                    Urgent
+                                </li>
+                            </ul>
+                            <h3 class="fs-18 fw-medium">
+                                <a routerLink="/job-details-sidebar">
+                                    Creative Graphic Designer for Dynamic Advertising Agency
+                                </a>
+                            </h3>
+                            <ul class="job-desc-meta list-unstyle">
+                                <li class="fs-14">
+                                    <img src="img/icons/map.svg" alt="Map Icon">
+                                    Florida, USA
+                                </li>
+                                <li class="fs-14">
+                                    <img src="img/icons/calendar.svg" alt="Calendar Icon">
+                                    12 Jul, 2024
+                                </li>
+                                <li class="fs-14">
+                                    <img src="img/icons/cash.svg" alt="Money Icon">
+                                    <span class="fw-semibold">$50</span>/hour
+                                </li>
+                            </ul>
+                            <div class="job-action d-flex flex-wrap align-items-center justify-content-between">
+                                <a routerLink="/job-details-sidebar" class="btn style-two">
+                                    Apply Now
+                                </a>
+                                <button class="add-to-bookmark d-flex flex-column justify-content-center align-items-center rounded-circle transition">
+                                    <img src="img/icons/bookmark.svg" alt="Bookmark Icon" class="transition">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="job-card style-five d-flex flex-wrap align-items-center justify-content-between round-10 mb-30 transition">
+                        <div class="job-img-wrap position-relative index-1 round-4 overflow-hidden">
+                            <img src="img/jobs/job-9.png" alt="Job Image" class="round-4 transition">
+                            <div class="employer-logo-wrap position-absolute d-flex flex-wrap align-items-center">
+                                <div class="employer-logo bg-white d-flex flex-column align-items-center justify-content-center rounded-circle">
+                                    <img src="img/employer/supabase.svg" alt="Employre Logo">
+                                </div>
+                                <span class="text-white fs-14 fw-medium">
+                                    Supabase
+                                </span>
+                                <a routerLink="/employer-details" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                            </div>
+                        </div>
+                        <div class="job-info">
+                            <ul class="job-metainfo list-unstyle">
+                                <li class="fs-13 fw-medium bg-gin">
+                                    Full Time
+                                </li>
+                                <li class="fs-13 fw-medium bg-mystic">
+                                    Urgent
+                                </li>
+                            </ul>
+                            <h3 class="fs-18 fw-medium">
+                                <a routerLink="/job-details-sidebar">
+                                    Experienced Content Writer Needed for Leading Digital Media Company
+                                </a>
+                            </h3>
+                            <ul class="job-desc-meta list-unstyle">
+                                <li class="fs-14">
+                                    <img src="img/icons/map.svg" alt="Map Icon">
+                                    New York, USA
+                                </li>
+                                <li class="fs-14">
+                                    <img src="img/icons/calendar.svg" alt="Calendar Icon">
+                                    15 Jul, 2024
+                                </li>
+                                <li class="fs-14">
+                                    <img src="img/icons/cash.svg" alt="Money Icon">
+                                    <span class="fw-semibold">$34</span>/hour
+                                </li>
+                            </ul>
+                            <div class="job-action d-flex flex-wrap align-items-center justify-content-between">
+                                <a routerLink="/job-details-sidebar" class="btn style-two">
+                                    Apply Now
+                                </a>
+                                <button class="add-to-bookmark d-flex flex-column justify-content-center align-items-center rounded-circle transition">
+                                    <img src="img/icons/bookmark.svg" alt="Bookmark Icon" class="transition">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="job-card style-five d-flex flex-wrap align-items-center justify-content-between round-10 mb-30 transition">
+                        <div class="job-img-wrap position-relative index-1 round-4 overflow-hidden">
+                            <img src="img/jobs/job-10.png" alt="Job Image" class="round-4 transition">
+                            <div class="employer-logo-wrap position-absolute d-flex flex-wrap align-items-center">
+                                <div class="employer-logo bg-white d-flex flex-column align-items-center justify-content-center rounded-circle">
+                                    <img src="img/employer/asana.svg" alt="Employre Logo">
+                                </div>
+                                <span class="text-white fs-14 fw-medium">
+                                    Asana
+                                </span>
+                                <a routerLink="/employer-details" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                            </div>
+                        </div>
+                        <div class="job-info">
+                            <ul class="job-metainfo list-unstyle">
+                                <li class="fs-13 fw-medium bg-roman">
+                                    Part Time
+                                </li>
+                                <li class="fs-13 fw-medium bg-mystic">
+                                    Urgent
+                                </li>
+                            </ul>
+                            <h3 class="fs-18 fw-medium">
+                                <a routerLink="/job-details-sidebar">
+                                    Seasoned HR Manager Wanted for Expanding International Corporation
+                                </a>
+                            </h3>
+                            <ul class="job-desc-meta list-unstyle">
+                                <li class="fs-14">
+                                    <img src="img/icons/map.svg" alt="Map Icon">
+                                    Florida, USA
+                                </li>
+                                <li class="fs-14">
+                                    <img src="img/icons/calendar.svg" alt="Calendar Icon">
+                                    12 Jul, 2024
+                                </li>
+                                <li class="fs-14">
+                                    <img src="img/icons/cash.svg" alt="Money Icon">
+                                    <span class="fw-semibold">$50</span>/hour
+                                </li>
+                            </ul>
+                            <div class="job-action d-flex flex-wrap align-items-center justify-content-between">
+                                <a routerLink="/job-details-sidebar" class="btn style-two">
+                                    Apply Now
+                                </a>
+                                <button class="add-to-bookmark d-flex flex-column justify-content-center align-items-center rounded-circle transition">
+                                    <img src="img/icons/bookmark.svg" alt="Bookmark Icon" class="transition">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="job-card style-five d-flex flex-wrap align-items-center justify-content-between round-10 mb-30 transition">
+                        <div class="job-img-wrap position-relative index-1 round-4 overflow-hidden">
+                            <img src="img/jobs/job-1.png" alt="Job Image" class="round-4 transition">
+                            <div class="employer-logo-wrap position-absolute d-flex flex-wrap align-items-center">
+                                <div class="employer-logo bg-white d-flex flex-column align-items-center justify-content-center rounded-circle">
+                                    <img src="img/employer/solit-it.svg" alt="Employre Logo">
+                                </div>
+                                <span class="text-white fs-14 fw-medium">
+                                    Solit IT Solution
+                                </span>
+                                <a routerLink="/employer-details" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                            </div>
+                        </div>
+                        <div class="job-info">
+                            <ul class="job-metainfo list-unstyle">
+                                <li class="fs-13 fw-medium bg-gin">
+                                    Full Time
+                                </li>
+                                <li class="fs-13 fw-medium bg-mystic">
+                                    Urgent
+                                </li>
+                            </ul>
+                            <h3 class="fs-18 fw-medium">
+                                <a routerLink="/job-details-sidebar">
+                                    Full Stack Developer with Machine Learning Experience
+                                </a>
+                            </h3>
+                            <ul class="job-desc-meta list-unstyle">
+                                <li class="fs-14">
+                                    <img src="img/icons/map.svg" alt="Map Icon">
+                                    Bercelona, Spain
+                                </li>
+                                <li class="fs-14">
+                                    <img src="img/icons/calendar.svg" alt="Calendar Icon">
+                                    22 Jul, 2024
+                                </li>
+                                <li class="fs-14">
+                                    <img src="img/icons/cash.svg" alt="Money Icon">
+                                    <span class="fw-semibold">$56</span>/hour
+                                </li>
+                            </ul>
+                            <div class="job-action d-flex flex-wrap align-items-center justify-content-between">
+                                <a routerLink="/job-details-sidebar" class="btn style-two">
+                                    Apply Now
+                                </a>
+                                <button class="add-to-bookmark d-flex flex-column justify-content-center align-items-center rounded-circle transition">
+                                    <img src="img/icons/bookmark.svg" alt="Bookmark Icon" class="transition">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="page-nav d-flex align-items-center justify-content-center list-unstyle mt-2">
+                <li>
+                    <a routerLink="." class="d-flex flex-column align-items-center justify-content-center rounded-circle fw-semibold text-title">
+                        <i class="ri-arrow-left-line"></i>
+                    </a>
+                </li>
+                <li>
+                    <a routerLink="." class="d-flex flex-column align-items-center justify-content-center rounded-circle fw-semibold">
+                        1
+                    </a>
+                </li>
+                <li>
+                    <a routerLink="." class="active d-flex flex-column align-items-center justify-content-center rounded-circle fw-semibold text-title">
+                        2
+                    </a>
+                </li>
+                <li>
+                    <a routerLink="." class="d-flex flex-column align-items-center justify-content-center rounded-circle fw-semibold text-title">
+                        3
+                    </a>
+                </li>
+                <li>
+                    <a routerLink="." class="d-flex flex-column align-items-center justify-content-center rounded-circle fw-semibold text-title">
+                        <i class="ri-arrow-right-line"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="tab-pane" id="tab2" *ngIf="currentTab === 'tab2'">
+            <div class="row justify-content-center">
+                <div class="col-xl-4 col-md-6">
+                    <div class="job-card style-five d-flex flex-wrap align-items-center justify-content-between round-10 mb-30 transition">
+                        <div class="job-img-wrap position-relative index-1 round-4 overflow-hidden">
+                            <img src="img/jobs/job-9.png" alt="Job Image" class="round-4 transition">
+                            <div class="employer-logo-wrap position-absolute d-flex flex-wrap align-items-center">
+                                <div class="employer-logo bg-white d-flex flex-column align-items-center justify-content-center rounded-circle">
+                                    <img src="img/employer/supabase.svg" alt="Employre Logo">
+                                </div>
+                                <span class="text-white fs-14 fw-medium">
+                                    Supabase
+                                </span>
+                                <a routerLink="/employer-details" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                            </div>
+                        </div>
+                        <div class="job-info">
+                            <ul class="job-metainfo list-unstyle">
+                                <li class="fs-13 fw-medium bg-gin">
+                                    Full Time
+                                </li>
+                                <li class="fs-13 fw-medium bg-mystic">
+                                    Urgent
+                                </li>
+                            </ul>
+                            <h3 class="fs-18 fw-medium">
+                                <a routerLink="/job-details-sidebar">
+                                    Experienced Content Writer Needed for Leading Digital Media Company
+                                </a>
+                            </h3>
+                            <ul class="job-desc-meta list-unstyle">
+                                <li class="fs-14">
+                                    <img src="img/icons/map.svg" alt="Map Icon">
+                                    New York, USA
+                                </li>
+                                <li class="fs-14">
+                                    <img src="img/icons/calendar.svg" alt="Calendar Icon">
+                                    15 Jul, 2024
+                                </li>
+                                <li class="fs-14">
+                                    <img src="img/icons/cash.svg" alt="Money Icon">
+                                    <span class="fw-semibold">$34</span>/hour
+                                </li>
+                            </ul>
+                            <div class="job-action d-flex flex-wrap align-items-center justify-content-between">
+                                <a routerLink="/job-details-sidebar" class="btn style-two">
+                                    Apply Now
+                                </a>
+                                <button class="add-to-bookmark d-flex flex-column justify-content-center align-items-center rounded-circle transition">
+                                    <img src="img/icons/bookmark.svg" alt="Bookmark Icon" class="transition">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="job-card style-five d-flex flex-wrap align-items-center justify-content-between round-10 mb-30 transition">
+                        <div class="job-img-wrap position-relative index-1 round-4 overflow-hidden">
+                            <img src="img/jobs/job-10.png" alt="Job Image" class="round-4 transition">
+                            <div class="employer-logo-wrap position-absolute d-flex flex-wrap align-items-center">
+                                <div class="employer-logo bg-white d-flex flex-column align-items-center justify-content-center rounded-circle">
+                                    <img src="img/employer/asana.svg" alt="Employre Logo">
+                                </div>
+                                <span class="text-white fs-14 fw-medium">
+                                    Asana
+                                </span>
+                                <a routerLink="/employer-details" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                            </div>
+                        </div>
+                        <div class="job-info">
+                            <ul class="job-metainfo list-unstyle">
+                                <li class="fs-13 fw-medium bg-roman">
+                                    Part Time
+                                </li>
+                                <li class="fs-13 fw-medium bg-mystic">
+                                    Urgent
+                                </li>
+                            </ul>
+                            <h3 class="fs-18 fw-medium">
+                                <a routerLink="/job-details-sidebar">
+                                    Seasoned HR Manager Wanted for Expanding International Corporation
+                                </a>
+                            </h3>
+                            <ul class="job-desc-meta list-unstyle">
+                                <li class="fs-14">
+                                    <img src="img/icons/map.svg" alt="Map Icon">
+                                    Florida, USA
+                                </li>
+                                <li class="fs-14">
+                                    <img src="img/icons/calendar.svg" alt="Calendar Icon">
+                                    12 Jul, 2024
+                                </li>
+                                <li class="fs-14">
+                                    <img src="img/icons/cash.svg" alt="Money Icon">
+                                    <span class="fw-semibold">$50</span>/hour
+                                </li>
+                            </ul>
+                            <div class="job-action d-flex flex-wrap align-items-center justify-content-between">
+                                <a routerLink="/job-details-sidebar" class="btn style-two">
+                                    Apply Now
+                                </a>
+                                <button class="add-to-bookmark d-flex flex-column justify-content-center align-items-center rounded-circle transition">
+                                    <img src="img/icons/bookmark.svg" alt="Bookmark Icon" class="transition">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="job-card style-five d-flex flex-wrap align-items-center justify-content-between round-10 mb-30 transition">
+                        <div class="job-img-wrap position-relative index-1 round-4 overflow-hidden">
+                            <img src="img/jobs/job-1.png" alt="Job Image" class="round-4 transition">
+                            <div class="employer-logo-wrap position-absolute d-flex flex-wrap align-items-center">
+                                <div class="employer-logo bg-white d-flex flex-column align-items-center justify-content-center rounded-circle">
+                                    <img src="img/employer/solit-it.svg" alt="Employre Logo">
+                                </div>
+                                <span class="text-white fs-14 fw-medium">
+                                    Solit IT Solution
+                                </span>
+                                <a routerLink="/employer-details" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                            </div>
+                        </div>
+                        <div class="job-info">
+                            <ul class="job-metainfo list-unstyle">
+                                <li class="fs-13 fw-medium bg-gin">
+                                    Full Time
+                                </li>
+                                <li class="fs-13 fw-medium bg-mystic">
+                                    Urgent
+                                </li>
+                            </ul>
+                            <h3 class="fs-18 fw-medium">
+                                <a routerLink="/job-details-sidebar">
+                                    Full Stack Developer with Machine Learning Experience
+                                </a>
+                            </h3>
+                            <ul class="job-desc-meta list-unstyle">
+                                <li class="fs-14">
+                                    <img src="img/icons/map.svg" alt="Map Icon">
+                                    Bercelona, Spain
+                                </li>
+                                <li class="fs-14">
+                                    <img src="img/icons/calendar.svg" alt="Calendar Icon">
+                                    22 Jul, 2024
+                                </li>
+                                <li class="fs-14">
+                                    <img src="img/icons/cash.svg" alt="Money Icon">
+                                    <span class="fw-semibold">$56</span>/hour
+                                </li>
+                            </ul>
+                            <div class="job-action d-flex flex-wrap align-items-center justify-content-between">
+                                <a routerLink="/job-details-sidebar" class="btn style-two">
+                                    Apply Now
+                                </a>
+                                <button class="add-to-bookmark d-flex flex-column justify-content-center align-items-center rounded-circle transition">
+                                    <img src="img/icons/bookmark.svg" alt="Bookmark Icon" class="transition">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="tab3" *ngIf="currentTab === 'tab3'">
+            <div class="row justify-content-center">
+                <div class="col-xl-4 col-md-6">
+                    <div class="job-card style-five d-flex flex-wrap align-items-center justify-content-between round-10 mb-30 transition">
+                        <div class="job-img-wrap position-relative index-1 round-4 overflow-hidden">
+                            <img src="img/jobs/job-2.png" alt="Job Image" class="round-4 transition">
+                            <div class="employer-logo-wrap position-absolute d-flex flex-wrap align-items-center">
+                                <div class="employer-logo bg-white d-flex flex-column align-items-center justify-content-center rounded-circle">
+                                    <img src="img/employer/supabase.svg" alt="Employre Logo">
+                                </div>
+                                <span class="text-white fs-14 fw-medium">
+                                    Supabase
+                                </span>
+                                <a routerLink="/employer-details" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                            </div>
+                        </div>
+                        <div class="job-info">
+                            <ul class="job-metainfo list-unstyle">
+                                <li class="fs-13 fw-medium bg-gin">
+                                    Full Time
+                                </li>
+                                <li class="fs-13 fw-medium bg-mystic">
+                                    Urgent
+                                </li>
+                            </ul>
+                            <h3 class="fs-18 fw-medium">
+                                <a routerLink="/job-details-sidebar">
+                                    UI/UX Designer with Research Experience in ML
+                                </a>
+                            </h3>
+                            <ul class="job-desc-meta list-unstyle">
+                                <li class="fs-14">
+                                    <img src="img/icons/map.svg" alt="Map Icon">
+                                    Torento, Canada
+                                </li>
+                                <li class="fs-14">
+                                    <img src="img/icons/calendar.svg" alt="Calendar Icon">
+                                    21 Jul, 2024
+                                </li>
+                                <li class="fs-14">
+                                    <img src="img/icons/cash.svg" alt="Money Icon">
+                                    <span class="fw-semibold">$45</span>/hour
+                                </li>
+                            </ul>
+                            <div class="job-action d-flex flex-wrap align-items-center justify-content-between">
+                                <a routerLink="/job-details-sidebar" class="btn style-two">
+                                    Apply Now
+                                </a>
+                                <button class="add-to-bookmark d-flex flex-column justify-content-center align-items-center rounded-circle transition">
+                                    <img src="img/icons/bookmark.svg" alt="Bookmark Icon" class="transition">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="job-card style-five d-flex flex-wrap align-items-center justify-content-between round-10 mb-30 transition">
+                        <div class="job-img-wrap position-relative index-1 round-4 overflow-hidden">
+                            <img src="img/jobs/job-3.png" alt="Job Image" class="round-4 transition">
+                            <div class="employer-logo-wrap position-absolute d-flex flex-wrap align-items-center">
+                                <div class="employer-logo bg-white d-flex flex-column align-items-center justify-content-center rounded-circle">
+                                    <img src="img/employer/google.svg" alt="Employre Logo">
+                                </div>
+                                <span class="text-white fs-14 fw-medium">
+                                    Google
+                                </span>
+                                <a routerLink="/employer-details" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                            </div>
+                        </div>
+                        <div class="job-info">
+                            <ul class="job-metainfo list-unstyle">
+                                <li class="fs-13 fw-medium bg-gin">
+                                    Full Time
+                                </li>
+                                <li class="fs-13 fw-medium bg-mystic">
+                                    Urgent
+                                </li>
+                            </ul>
+                            <h3 class="fs-18 fw-medium">
+                                <a routerLink="/job-details-sidebar">
+                                    Video Animation with VFX, Maya, 3D with Advanced knowledge
+                                </a>
+                            </h3>
+                            <ul class="job-desc-meta list-unstyle">
+                                <li class="fs-14">
+                                    <img src="img/icons/map.svg" alt="Map Icon">
+                                    Hampson, Spain
+                                </li>
+                                <li class="fs-14">
+                                    <img src="img/icons/calendar.svg" alt="Calendar Icon">
+                                    18 Jul, 2024
+                                </li>
+                                <li class="fs-14">
+                                    <img src="img/icons/cash.svg" alt="Money Icon">
+                                    <span class="fw-semibold">$65</span>/hour
+                                </li>
+                            </ul>
+                            <div class="job-action d-flex flex-wrap align-items-center justify-content-between">
+                                <a routerLink="/job-details-sidebar" class="btn style-two">
+                                    Apply Now
+                                </a>
+                                <button class="add-to-bookmark d-flex flex-column justify-content-center align-items-center rounded-circle transition">
+                                    <img src="img/icons/bookmark.svg" alt="Bookmark Icon" class="transition">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="job-card style-five d-flex flex-wrap align-items-center justify-content-between round-10 mb-30 transition">
+                        <div class="job-img-wrap position-relative index-1 round-4 overflow-hidden">
+                            <img src="img/jobs/job-4.png" alt="Job Image" class="round-4 transition">
+                            <div class="employer-logo-wrap position-absolute d-flex flex-wrap align-items-center">
+                                <div class="employer-logo bg-white d-flex flex-column align-items-center justify-content-center rounded-circle">
+                                    <img src="img/employer/mistral.svg" alt="Employre Logo">
+                                </div>
+                                <span class="text-white fs-14 fw-medium">
+                                    Mistral
+                                </span>
+                                <a routerLink="/employer-details" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                            </div>
+                        </div>
+                        <div class="job-info">
+                            <ul class="job-metainfo list-unstyle">
+                                <li class="fs-13 fw-medium bg-roman">
+                                    Part Time
+                                </li>
+                                <li class="fs-13 fw-medium bg-mystic">
+                                    Urgent
+                                </li>
+                            </ul>
+                            <h3 class="fs-18 fw-medium">
+                                <a routerLink="/job-details-sidebar">
+                                    Senior Marketing Manager Position Available at Leading Company
+                                </a>
+                            </h3>
+                            <ul class="job-desc-meta list-unstyle">
+                                <li class="fs-14">
+                                    <img src="img/icons/map.svg" alt="Map Icon">
+                                    Bercelona, Spain
+                                </li>
+                                <li class="fs-14">
+                                    <img src="img/icons/calendar.svg" alt="Calendar Icon">
+                                    15 Jul, 2024
+                                </li>
+                                <li class="fs-14">
+                                    <img src="img/icons/cash.svg" alt="Money Icon">
+                                    <span class="fw-semibold">$50</span>/hour
+                                </li>
+                            </ul>
+                            <div class="job-action d-flex flex-wrap align-items-center justify-content-between">
+                                <a routerLink="/job-details-sidebar" class="btn style-two">
+                                    Apply Now
+                                </a>
+                                <button class="add-to-bookmark d-flex flex-column justify-content-center align-items-center rounded-circle transition">
+                                    <img src="img/icons/bookmark.svg" alt="Bookmark Icon" class="transition">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="job-card style-five d-flex flex-wrap align-items-center justify-content-between round-10 mb-30 transition">
+                        <div class="job-img-wrap position-relative index-1 round-4 overflow-hidden">
+                            <img src="img/jobs/job-5.png" alt="Job Image" class="round-4 transition">
+                            <div class="employer-logo-wrap position-absolute d-flex flex-wrap align-items-center">
+                                <div class="employer-logo bg-white d-flex flex-column align-items-center justify-content-center rounded-circle">
+                                    <img src="img/employer/zoom.svg" alt="Employre Logo">
+                                </div>
+                                <span class="text-white fs-14 fw-medium">
+                                    Zoom
+                                </span>
+                                <a routerLink="/employer-details" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                            </div>
+                        </div>
+                        <div class="job-info">
+                            <ul class="job-metainfo list-unstyle">
+                                <li class="fs-13 fw-medium bg-gin">
+                                    Full Time
+                                </li>
+                                <li class="fs-13 fw-medium bg-mystic">
+                                    Urgent
+                                </li>
+                            </ul>
+                            <h3 class="fs-18 fw-medium">
+                                <a routerLink="/job-details-sidebar">
+                                    Remote Customer Service Specialist for Support Team
+                                </a>
+                            </h3>
+                            <ul class="job-desc-meta list-unstyle">
+                                <li class="fs-14">
+                                    <img src="img/icons/map.svg" alt="Map Icon">
+                                    New York, USA
+                                </li>
+                                <li class="fs-14">
+                                    <img src="img/icons/calendar.svg" alt="Calendar Icon">
+                                    15 Jul, 2024
+                                </li>
+                                <li class="fs-14">
+                                    <img src="img/icons/cash.svg" alt="Money Icon">
+                                    <span class="fw-semibold">$34</span>/hour
+                                </li>
+                            </ul>
+                            <div class="job-action d-flex flex-wrap align-items-center justify-content-between">
+                                <a routerLink="/job-details-sidebar" class="btn style-two">
+                                    Apply Now
+                                </a>
+                                <button class="add-to-bookmark d-flex flex-column justify-content-center align-items-center rounded-circle transition">
+                                    <img src="img/icons/bookmark.svg" alt="Bookmark Icon" class="transition">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="tab4" *ngIf="currentTab === 'tab4'">
+            <div class="row justify-content-center">
+                <div class="col-xl-4 col-md-6">
+                    <div class="job-card style-five d-flex flex-wrap align-items-center justify-content-between round-10 mb-30 transition">
+                        <div class="job-img-wrap position-relative index-1 round-4 overflow-hidden">
+                            <img src="img/jobs/job-4.png" alt="Job Image" class="round-4 transition">
+                            <div class="employer-logo-wrap position-absolute d-flex flex-wrap align-items-center">
+                                <div class="employer-logo bg-white d-flex flex-column align-items-center justify-content-center rounded-circle">
+                                    <img src="img/employer/mistral.svg" alt="Employre Logo">
+                                </div>
+                                <span class="text-white fs-14 fw-medium">
+                                    Mistral
+                                </span>
+                                <a routerLink="/employer-details" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                            </div>
+                        </div>
+                        <div class="job-info">
+                            <ul class="job-metainfo list-unstyle">
+                                <li class="fs-13 fw-medium bg-roman">
+                                    Part Time
+                                </li>
+                                <li class="fs-13 fw-medium bg-mystic">
+                                    Urgent
+                                </li>
+                            </ul>
+                            <h3 class="fs-18 fw-medium">
+                                <a routerLink="/job-details-sidebar">
+                                    Senior Marketing Manager Position Available at Leading Company
+                                </a>
+                            </h3>
+                            <ul class="job-desc-meta list-unstyle">
+                                <li class="fs-14">
+                                    <img src="img/icons/map.svg" alt="Map Icon">
+                                    Bercelona, Spain
+                                </li>
+                                <li class="fs-14">
+                                    <img src="img/icons/calendar.svg" alt="Calendar Icon">
+                                    15 Jul, 2024
+                                </li>
+                                <li class="fs-14">
+                                    <img src="img/icons/cash.svg" alt="Money Icon">
+                                    <span class="fw-semibold">$50</span>/hour
+                                </li>
+                            </ul>
+                            <div class="job-action d-flex flex-wrap align-items-center justify-content-between">
+                                <a routerLink="/job-details-sidebar" class="btn style-two">
+                                    Apply Now
+                                </a>
+                                <button class="add-to-bookmark d-flex flex-column justify-content-center align-items-center rounded-circle transition">
+                                    <img src="img/icons/bookmark.svg" alt="Bookmark Icon" class="transition">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="job-card style-five d-flex flex-wrap align-items-center justify-content-between round-10 mb-30 transition">
+                        <div class="job-img-wrap position-relative index-1 round-4 overflow-hidden">
+                            <img src="img/jobs/job-5.png" alt="Job Image" class="round-4 transition">
+                            <div class="employer-logo-wrap position-absolute d-flex flex-wrap align-items-center">
+                                <div class="employer-logo bg-white d-flex flex-column align-items-center justify-content-center rounded-circle">
+                                    <img src="img/employer/zoom.svg" alt="Employre Logo">
+                                </div>
+                                <span class="text-white fs-14 fw-medium">
+                                    Zoom
+                                </span>
+                                <a routerLink="/employer-details" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                            </div>
+                        </div>
+                        <div class="job-info">
+                            <ul class="job-metainfo list-unstyle">
+                                <li class="fs-13 fw-medium bg-gin">
+                                    Full Time
+                                </li>
+                                <li class="fs-13 fw-medium bg-mystic">
+                                    Urgent
+                                </li>
+                            </ul>
+                            <h3 class="fs-18 fw-medium">
+                                <a routerLink="/job-details-sidebar">
+                                    Remote Customer Service Specialist for Support Team
+                                </a>
+                            </h3>
+                            <ul class="job-desc-meta list-unstyle">
+                                <li class="fs-14">
+                                    <img src="img/icons/map.svg" alt="Map Icon">
+                                    New York, USA
+                                </li>
+                                <li class="fs-14">
+                                    <img src="img/icons/calendar.svg" alt="Calendar Icon">
+                                    15 Jul, 2024
+                                </li>
+                                <li class="fs-14">
+                                    <img src="img/icons/cash.svg" alt="Money Icon">
+                                    <span class="fw-semibold">$34</span>/hour
+                                </li>
+                            </ul>
+                            <div class="job-action d-flex flex-wrap align-items-center justify-content-between">
+                                <a routerLink="/job-details-sidebar" class="btn style-two">
+                                    Apply Now
+                                </a>
+                                <button class="add-to-bookmark d-flex flex-column justify-content-center align-items-center rounded-circle transition">
+                                    <img src="img/icons/bookmark.svg" alt="Bookmark Icon" class="transition">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="job-card style-five d-flex flex-wrap align-items-center justify-content-between round-10 mb-30 transition">
+                        <div class="job-img-wrap position-relative index-1 round-4 overflow-hidden">
+                            <img src="img/jobs/job-6.png" alt="Job Image" class="round-4 transition">
+                            <div class="employer-logo-wrap position-absolute d-flex flex-wrap align-items-center">
+                                <div class="employer-logo bg-white d-flex flex-column align-items-center justify-content-center rounded-circle">
+                                    <img src="img/employer/tonning.svg" alt="Employre Logo">
+                                </div>
+                                <span class="text-white fs-14 fw-medium">
+                                    Toning
+                                </span>
+                                <a routerLink="/employer-details" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                            </div>
+                        </div>
+                        <div class="job-info">
+                            <ul class="job-metainfo list-unstyle">
+                                <li class="fs-13 fw-medium bg-gin">
+                                    Full Time
+                                </li>
+                                <li class="fs-13 fw-medium bg-mystic">
+                                    Urgent
+                                </li>
+                            </ul>
+                            <h3 class="fs-18 fw-medium">
+                                <a routerLink="/job-details-sidebar">
+                                    Creative Graphic Designer for Dynamic Advertising Agency
+                                </a>
+                            </h3>
+                            <ul class="job-desc-meta list-unstyle">
+                                <li class="fs-14">
+                                    <img src="img/icons/map.svg" alt="Map Icon">
+                                    Florida, USA
+                                </li>
+                                <li class="fs-14">
+                                    <img src="img/icons/calendar.svg" alt="Calendar Icon">
+                                    12 Jul, 2024
+                                </li>
+                                <li class="fs-14">
+                                    <img src="img/icons/cash.svg" alt="Money Icon">
+                                    <span class="fw-semibold">$50</span>/hour
+                                </li>
+                            </ul>
+                            <div class="job-action d-flex flex-wrap align-items-center justify-content-between">
+                                <a routerLink="/job-details-sidebar" class="btn style-two">
+                                    Apply Now
+                                </a>
+                                <button class="add-to-bookmark d-flex flex-column justify-content-center align-items-center rounded-circle transition">
+                                    <img src="img/icons/bookmark.svg" alt="Bookmark Icon" class="transition">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="job-card style-five d-flex flex-wrap align-items-center justify-content-between round-10 mb-30 transition">
+                        <div class="job-img-wrap position-relative index-1 round-4 overflow-hidden">
+                            <img src="img/jobs/job-1.png" alt="Job Image" class="round-4 transition">
+                            <div class="employer-logo-wrap position-absolute d-flex flex-wrap align-items-center">
+                                <div class="employer-logo bg-white d-flex flex-column align-items-center justify-content-center rounded-circle">
+                                    <img src="img/employer/solit-it.svg" alt="Employre Logo">
+                                </div>
+                                <span class="text-white fs-14 fw-medium">
+                                    Solit IT Solution
+                                </span>
+                                <a routerLink="/employer-details" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                            </div>
+                        </div>
+                        <div class="job-info">
+                            <ul class="job-metainfo list-unstyle">
+                                <li class="fs-13 fw-medium bg-gin">
+                                    Full Time
+                                </li>
+                                <li class="fs-13 fw-medium bg-mystic">
+                                    Urgent
+                                </li>
+                            </ul>
+                            <h3 class="fs-18 fw-medium">
+                                <a routerLink="/job-details-sidebar">
+                                    Full Stack Developer with Machine Learning Experience
+                                </a>
+                            </h3>
+                            <ul class="job-desc-meta list-unstyle">
+                                <li class="fs-14">
+                                    <img src="img/icons/map.svg" alt="Map Icon">
+                                    Bercelona, Spain
+                                </li>
+                                <li class="fs-14">
+                                    <img src="img/icons/calendar.svg" alt="Calendar Icon">
+                                    22 Jul, 2024
+                                </li>
+                                <li class="fs-14">
+                                    <img src="img/icons/cash.svg" alt="Money Icon">
+                                    <span class="fw-semibold">$56</span>/hour
+                                </li>
+                            </ul>
+                            <div class="job-action d-flex flex-wrap align-items-center justify-content-between">
+                                <a routerLink="/job-details-sidebar" class="btn style-two">
+                                    Apply Now
+                                </a>
+                                <button class="add-to-bookmark d-flex flex-column justify-content-center align-items-center rounded-circle transition">
+                                    <img src="img/icons/bookmark.svg" alt="Bookmark Icon" class="transition">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="job-card style-five d-flex flex-wrap align-items-center justify-content-between round-10 mb-30 transition">
+                        <div class="job-img-wrap position-relative index-1 round-4 overflow-hidden">
+                            <img src="img/jobs/job-2.png" alt="Job Image" class="round-4 transition">
+                            <div class="employer-logo-wrap position-absolute d-flex flex-wrap align-items-center">
+                                <div class="employer-logo bg-white d-flex flex-column align-items-center justify-content-center rounded-circle">
+                                    <img src="img/employer/supabase.svg" alt="Employre Logo">
+                                </div>
+                                <span class="text-white fs-14 fw-medium">
+                                    Supabase
+                                </span>
+                                <a routerLink="/employer-details" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                            </div>
+                        </div>
+                        <div class="job-info">
+                            <ul class="job-metainfo list-unstyle">
+                                <li class="fs-13 fw-medium bg-gin">
+                                    Full Time
+                                </li>
+                                <li class="fs-13 fw-medium bg-mystic">
+                                    Urgent
+                                </li>
+                            </ul>
+                            <h3 class="fs-18 fw-medium">
+                                <a routerLink="/job-details-sidebar">
+                                    UI/UX Designer with Research Experience in ML
+                                </a>
+                            </h3>
+                            <ul class="job-desc-meta list-unstyle">
+                                <li class="fs-14">
+                                    <img src="img/icons/map.svg" alt="Map Icon">
+                                    Torento, Canada
+                                </li>
+                                <li class="fs-14">
+                                    <img src="img/icons/calendar.svg" alt="Calendar Icon">
+                                    21 Jul, 2024
+                                </li>
+                                <li class="fs-14">
+                                    <img src="img/icons/cash.svg" alt="Money Icon">
+                                    <span class="fw-semibold">$45</span>/hour
+                                </li>
+                            </ul>
+                            <div class="job-action d-flex flex-wrap align-items-center justify-content-between">
+                                <a routerLink="/job-details-sidebar" class="btn style-two">
+                                    Apply Now
+                                </a>
+                                <button class="add-to-bookmark d-flex flex-column justify-content-center align-items-center rounded-circle transition">
+                                    <img src="img/icons/bookmark.svg" alt="Bookmark Icon" class="transition">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="job-card style-five d-flex flex-wrap align-items-center justify-content-between round-10 mb-30 transition">
+                        <div class="job-img-wrap position-relative index-1 round-4 overflow-hidden">
+                            <img src="img/jobs/job-3.png" alt="Job Image" class="round-4 transition">
+                            <div class="employer-logo-wrap position-absolute d-flex flex-wrap align-items-center">
+                                <div class="employer-logo bg-white d-flex flex-column align-items-center justify-content-center rounded-circle">
+                                    <img src="img/employer/google.svg" alt="Employre Logo">
+                                </div>
+                                <span class="text-white fs-14 fw-medium">
+                                    Google
+                                </span>
+                                <a routerLink="/employer-details" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                            </div>
+                        </div>
+                        <div class="job-info">
+                            <ul class="job-metainfo list-unstyle">
+                                <li class="fs-13 fw-medium bg-gin">
+                                    Full Time
+                                </li>
+                                <li class="fs-13 fw-medium bg-mystic">
+                                    Urgent
+                                </li>
+                            </ul>
+                            <h3 class="fs-18 fw-medium">
+                                <a routerLink="/job-details-sidebar">
+                                    Video Animation with VFX, Maya, 3D with Advanced knowledge
+                                </a>
+                            </h3>
+                            <ul class="job-desc-meta list-unstyle">
+                                <li class="fs-14">
+                                    <img src="img/icons/map.svg" alt="Map Icon">
+                                    Hampson, Spain
+                                </li>
+                                <li class="fs-14">
+                                    <img src="img/icons/calendar.svg" alt="Calendar Icon">
+                                    18 Jul, 2024
+                                </li>
+                                <li class="fs-14">
+                                    <img src="img/icons/cash.svg" alt="Money Icon">
+                                    <span class="fw-semibold">$65</span>/hour
+                                </li>
+                            </ul>
+                            <div class="job-action d-flex flex-wrap align-items-center justify-content-between">
+                                <a routerLink="/job-details-sidebar" class="btn style-two">
+                                    Apply Now
+                                </a>
+                                <button class="add-to-bookmark d-flex flex-column justify-content-center align-items-center rounded-circle transition">
+                                    <img src="img/icons/bookmark.svg" alt="Bookmark Icon" class="transition">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="tab5" *ngIf="currentTab === 'tab5'">
+            <div class="row justify-content-center">
+                <div class="col-xl-4 col-md-6">
+                    <div class="job-card style-five d-flex flex-wrap align-items-center justify-content-between round-10 mb-30 transition">
+                        <div class="job-img-wrap position-relative index-1 round-4 overflow-hidden">
+                            <img src="img/jobs/job-1.png" alt="Job Image" class="round-4 transition">
+                            <div class="employer-logo-wrap position-absolute d-flex flex-wrap align-items-center">
+                                <div class="employer-logo bg-white d-flex flex-column align-items-center justify-content-center rounded-circle">
+                                    <img src="img/employer/solit-it.svg" alt="Employre Logo">
+                                </div>
+                                <span class="text-white fs-14 fw-medium">
+                                    Solit IT Solution
+                                </span>
+                                <a routerLink="/employer-details" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                            </div>
+                        </div>
+                        <div class="job-info">
+                            <ul class="job-metainfo list-unstyle">
+                                <li class="fs-13 fw-medium bg-gin">
+                                    Full Time
+                                </li>
+                                <li class="fs-13 fw-medium bg-mystic">
+                                    Urgent
+                                </li>
+                            </ul>
+                            <h3 class="fs-18 fw-medium">
+                                <a routerLink="/job-details-sidebar">
+                                    Full Stack Developer with Machine Learning Experience
+                                </a>
+                            </h3>
+                            <ul class="job-desc-meta list-unstyle">
+                                <li class="fs-14">
+                                    <img src="img/icons/map.svg" alt="Map Icon">
+                                    Bercelona, Spain
+                                </li>
+                                <li class="fs-14">
+                                    <img src="img/icons/calendar.svg" alt="Calendar Icon">
+                                    22 Jul, 2024
+                                </li>
+                                <li class="fs-14">
+                                    <img src="img/icons/cash.svg" alt="Money Icon">
+                                    <span class="fw-semibold">$56</span>/hour
+                                </li>
+                            </ul>
+                            <div class="job-action d-flex flex-wrap align-items-center justify-content-between">
+                                <a routerLink="/job-details-sidebar" class="btn style-two">
+                                    Apply Now
+                                </a>
+                                <button class="add-to-bookmark d-flex flex-column justify-content-center align-items-center rounded-circle transition">
+                                    <img src="img/icons/bookmark.svg" alt="Bookmark Icon" class="transition">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="job-card style-five d-flex flex-wrap align-items-center justify-content-between round-10 mb-30 transition">
+                        <div class="job-img-wrap position-relative index-1 round-4 overflow-hidden">
+                            <img src="img/jobs/job-4.png" alt="Job Image" class="round-4 transition">
+                            <div class="employer-logo-wrap position-absolute d-flex flex-wrap align-items-center">
+                                <div class="employer-logo bg-white d-flex flex-column align-items-center justify-content-center rounded-circle">
+                                    <img src="img/employer/mistral.svg" alt="Employre Logo">
+                                </div>
+                                <span class="text-white fs-14 fw-medium">
+                                    Mistral
+                                </span>
+                                <a routerLink="/employer-details" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                            </div>
+                        </div>
+                        <div class="job-info">
+                            <ul class="job-metainfo list-unstyle">
+                                <li class="fs-13 fw-medium bg-roman">
+                                    Part Time
+                                </li>
+                                <li class="fs-13 fw-medium bg-mystic">
+                                    Urgent
+                                </li>
+                            </ul>
+                            <h3 class="fs-18 fw-medium">
+                                <a routerLink="/job-details-sidebar">
+                                    Senior Marketing Manager Position Available at Leading Company
+                                </a>
+                            </h3>
+                            <ul class="job-desc-meta list-unstyle">
+                                <li class="fs-14">
+                                    <img src="img/icons/map.svg" alt="Map Icon">
+                                    Bercelona, Spain
+                                </li>
+                                <li class="fs-14">
+                                    <img src="img/icons/calendar.svg" alt="Calendar Icon">
+                                    15 Jul, 2024
+                                </li>
+                                <li class="fs-14">
+                                    <img src="img/icons/cash.svg" alt="Money Icon">
+                                    <span class="fw-semibold">$50</span>/hour
+                                </li>
+                            </ul>
+                            <div class="job-action d-flex flex-wrap align-items-center justify-content-between">
+                                <a routerLink="/job-details-sidebar" class="btn style-two">
+                                    Apply Now
+                                </a>
+                                <button class="add-to-bookmark d-flex flex-column justify-content-center align-items-center rounded-circle transition">
+                                    <img src="img/icons/bookmark.svg" alt="Bookmark Icon" class="transition">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="job-card style-five d-flex flex-wrap align-items-center justify-content-between round-10 mb-30 transition">
+                        <div class="job-img-wrap position-relative index-1 round-4 overflow-hidden">
+                            <img src="img/jobs/job-5.png" alt="Job Image" class="round-4 transition">
+                            <div class="employer-logo-wrap position-absolute d-flex flex-wrap align-items-center">
+                                <div class="employer-logo bg-white d-flex flex-column align-items-center justify-content-center rounded-circle">
+                                    <img src="img/employer/zoom.svg" alt="Employre Logo">
+                                </div>
+                                <span class="text-white fs-14 fw-medium">
+                                    Zoom
+                                </span>
+                                <a routerLink="/employer-details" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                            </div>
+                        </div>
+                        <div class="job-info">
+                            <ul class="job-metainfo list-unstyle">
+                                <li class="fs-13 fw-medium bg-gin">
+                                    Full Time
+                                </li>
+                                <li class="fs-13 fw-medium bg-mystic">
+                                    Urgent
+                                </li>
+                            </ul>
+                            <h3 class="fs-18 fw-medium">
+                                <a routerLink="/job-details-sidebar">
+                                    Remote Customer Service Specialist for Support Team
+                                </a>
+                            </h3>
+                            <ul class="job-desc-meta list-unstyle">
+                                <li class="fs-14">
+                                    <img src="img/icons/map.svg" alt="Map Icon">
+                                    New York, USA
+                                </li>
+                                <li class="fs-14">
+                                    <img src="img/icons/calendar.svg" alt="Calendar Icon">
+                                    15 Jul, 2024
+                                </li>
+                                <li class="fs-14">
+                                    <img src="img/icons/cash.svg" alt="Money Icon">
+                                    <span class="fw-semibold">$34</span>/hour
+                                </li>
+                            </ul>
+                            <div class="job-action d-flex flex-wrap align-items-center justify-content-between">
+                                <a routerLink="/job-details-sidebar" class="btn style-two">
+                                    Apply Now
+                                </a>
+                                <button class="add-to-bookmark d-flex flex-column justify-content-center align-items-center rounded-circle transition">
+                                    <img src="img/icons/bookmark.svg" alt="Bookmark Icon" class="transition">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="tab6" *ngIf="currentTab === 'tab6'">
+            <div class="row justify-content-center">
+                <div class="col-xl-4 col-md-6">
+                    <div class="job-card style-five d-flex flex-wrap align-items-center justify-content-between round-10 mb-30 transition">
+                        <div class="job-img-wrap position-relative index-1 round-4 overflow-hidden">
+                            <img src="img/jobs/job-9.png" alt="Job Image" class="round-4 transition">
+                            <div class="employer-logo-wrap position-absolute d-flex flex-wrap align-items-center">
+                                <div class="employer-logo bg-white d-flex flex-column align-items-center justify-content-center rounded-circle">
+                                    <img src="img/employer/supabase.svg" alt="Employre Logo">
+                                </div>
+                                <span class="text-white fs-14 fw-medium">
+                                    Supabase
+                                </span>
+                                <a routerLink="/employer-details" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                            </div>
+                        </div>
+                        <div class="job-info">
+                            <ul class="job-metainfo list-unstyle">
+                                <li class="fs-13 fw-medium bg-gin">
+                                    Full Time
+                                </li>
+                                <li class="fs-13 fw-medium bg-mystic">
+                                    Urgent
+                                </li>
+                            </ul>
+                            <h3 class="fs-18 fw-medium">
+                                <a routerLink="/job-details-sidebar">
+                                    Experienced Content Writer Needed for Leading Digital Media Company
+                                </a>
+                            </h3>
+                            <ul class="job-desc-meta list-unstyle">
+                                <li class="fs-14">
+                                    <img src="img/icons/map.svg" alt="Map Icon">
+                                    New York, USA
+                                </li>
+                                <li class="fs-14">
+                                    <img src="img/icons/calendar.svg" alt="Calendar Icon">
+                                    15 Jul, 2024
+                                </li>
+                                <li class="fs-14">
+                                    <img src="img/icons/cash.svg" alt="Money Icon">
+                                    <span class="fw-semibold">$34</span>/hour
+                                </li>
+                            </ul>
+                            <div class="job-action d-flex flex-wrap align-items-center justify-content-between">
+                                <a routerLink="/job-details-sidebar" class="btn style-two">
+                                    Apply Now
+                                </a>
+                                <button class="add-to-bookmark d-flex flex-column justify-content-center align-items-center rounded-circle transition">
+                                    <img src="img/icons/bookmark.svg" alt="Bookmark Icon" class="transition">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="job-card style-five d-flex flex-wrap align-items-center justify-content-between round-10 mb-30 transition">
+                        <div class="job-img-wrap position-relative index-1 round-4 overflow-hidden">
+                            <img src="img/jobs/job-1.png" alt="Job Image" class="round-4 transition">
+                            <div class="employer-logo-wrap position-absolute d-flex flex-wrap align-items-center">
+                                <div class="employer-logo bg-white d-flex flex-column align-items-center justify-content-center rounded-circle">
+                                    <img src="img/employer/solit-it.svg" alt="Employre Logo">
+                                </div>
+                                <span class="text-white fs-14 fw-medium">
+                                    Solit IT Solution
+                                </span>
+                                <a routerLink="/employer-details" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                            </div>
+                        </div>
+                        <div class="job-info">
+                            <ul class="job-metainfo list-unstyle">
+                                <li class="fs-13 fw-medium bg-gin">
+                                    Full Time
+                                </li>
+                                <li class="fs-13 fw-medium bg-mystic">
+                                    Urgent
+                                </li>
+                            </ul>
+                            <h3 class="fs-18 fw-medium">
+                                <a routerLink="/job-details-sidebar">
+                                    Full Stack Developer with Machine Learning Experience
+                                </a>
+                            </h3>
+                            <ul class="job-desc-meta list-unstyle">
+                                <li class="fs-14">
+                                    <img src="img/icons/map.svg" alt="Map Icon">
+                                    Bercelona, Spain
+                                </li>
+                                <li class="fs-14">
+                                    <img src="img/icons/calendar.svg" alt="Calendar Icon">
+                                    22 Jul, 2024
+                                </li>
+                                <li class="fs-14">
+                                    <img src="img/icons/cash.svg" alt="Money Icon">
+                                    <span class="fw-semibold">$56</span>/hour
+                                </li>
+                            </ul>
+                            <div class="job-action d-flex flex-wrap align-items-center justify-content-between">
+                                <a routerLink="/job-details-sidebar" class="btn style-two">
+                                    Apply Now
+                                </a>
+                                <button class="add-to-bookmark d-flex flex-column justify-content-center align-items-center rounded-circle transition">
+                                    <img src="img/icons/bookmark.svg" alt="Bookmark Icon" class="transition">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="job-card style-five d-flex flex-wrap align-items-center justify-content-between round-10 mb-30 transition">
+                        <div class="job-img-wrap position-relative index-1 round-4 overflow-hidden">
+                            <img src="img/jobs/job-2.png" alt="Job Image" class="round-4 transition">
+                            <div class="employer-logo-wrap position-absolute d-flex flex-wrap align-items-center">
+                                <div class="employer-logo bg-white d-flex flex-column align-items-center justify-content-center rounded-circle">
+                                    <img src="img/employer/supabase.svg" alt="Employre Logo">
+                                </div>
+                                <span class="text-white fs-14 fw-medium">
+                                    Supabase
+                                </span>
+                                <a routerLink="/employer-details" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                            </div>
+                        </div>
+                        <div class="job-info">
+                            <ul class="job-metainfo list-unstyle">
+                                <li class="fs-13 fw-medium bg-gin">
+                                    Full Time
+                                </li>
+                                <li class="fs-13 fw-medium bg-mystic">
+                                    Urgent
+                                </li>
+                            </ul>
+                            <h3 class="fs-18 fw-medium">
+                                <a routerLink="/job-details-sidebar">
+                                    UI/UX Designer with Research Experience in ML
+                                </a>
+                            </h3>
+                            <ul class="job-desc-meta list-unstyle">
+                                <li class="fs-14">
+                                    <img src="img/icons/map.svg" alt="Map Icon">
+                                    Torento, Canada
+                                </li>
+                                <li class="fs-14">
+                                    <img src="img/icons/calendar.svg" alt="Calendar Icon">
+                                    21 Jul, 2024
+                                </li>
+                                <li class="fs-14">
+                                    <img src="img/icons/cash.svg" alt="Money Icon">
+                                    <span class="fw-semibold">$45</span>/hour
+                                </li>
+                            </ul>
+                            <div class="job-action d-flex flex-wrap align-items-center justify-content-between">
+                                <a routerLink="/job-details-sidebar" class="btn style-two">
+                                    Apply Now
+                                </a>
+                                <button class="add-to-bookmark d-flex flex-column justify-content-center align-items-center rounded-circle transition">
+                                    <img src="img/icons/bookmark.svg" alt="Bookmark Icon" class="transition">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="job-card style-five d-flex flex-wrap align-items-center justify-content-between round-10 mb-30 transition">
+                        <div class="job-img-wrap position-relative index-1 round-4 overflow-hidden">
+                            <img src="img/jobs/job-4.png" alt="Job Image" class="round-4 transition">
+                            <div class="employer-logo-wrap position-absolute d-flex flex-wrap align-items-center">
+                                <div class="employer-logo bg-white d-flex flex-column align-items-center justify-content-center rounded-circle">
+                                    <img src="img/employer/mistral.svg" alt="Employre Logo">
+                                </div>
+                                <span class="text-white fs-14 fw-medium">
+                                    Mistral
+                                </span>
+                                <a routerLink="/employer-details" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                            </div>
+                        </div>
+                        <div class="job-info">
+                            <ul class="job-metainfo list-unstyle">
+                                <li class="fs-13 fw-medium bg-roman">
+                                    Part Time
+                                </li>
+                                <li class="fs-13 fw-medium bg-mystic">
+                                    Urgent
+                                </li>
+                            </ul>
+                            <h3 class="fs-18 fw-medium">
+                                <a routerLink="/job-details-sidebar">
+                                    Senior Marketing Manager Position Available at Leading Company
+                                </a>
+                            </h3>
+                            <ul class="job-desc-meta list-unstyle">
+                                <li class="fs-14">
+                                    <img src="img/icons/map.svg" alt="Map Icon">
+                                    Bercelona, Spain
+                                </li>
+                                <li class="fs-14">
+                                    <img src="img/icons/calendar.svg" alt="Calendar Icon">
+                                    15 Jul, 2024
+                                </li>
+                                <li class="fs-14">
+                                    <img src="img/icons/cash.svg" alt="Money Icon">
+                                    <span class="fw-semibold">$50</span>/hour
+                                </li>
+                            </ul>
+                            <div class="job-action d-flex flex-wrap align-items-center justify-content-between">
+                                <a routerLink="/job-details-sidebar" class="btn style-two">
+                                    Apply Now
+                                </a>
+                                <button class="add-to-bookmark d-flex flex-column justify-content-center align-items-center rounded-circle transition">
+                                    <img src="img/icons/bookmark.svg" alt="Bookmark Icon" class="transition">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="job-card style-five d-flex flex-wrap align-items-center justify-content-between round-10 mb-30 transition">
+                        <div class="job-img-wrap position-relative index-1 round-4 overflow-hidden">
+                            <img src="img/jobs/job-6.png" alt="Job Image" class="round-4 transition">
+                            <div class="employer-logo-wrap position-absolute d-flex flex-wrap align-items-center">
+                                <div class="employer-logo bg-white d-flex flex-column align-items-center justify-content-center rounded-circle">
+                                    <img src="img/employer/tonning.svg" alt="Employre Logo">
+                                </div>
+                                <span class="text-white fs-14 fw-medium">
+                                    Toning
+                                </span>
+                                <a routerLink="/employer-details" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                            </div>
+                        </div>
+                        <div class="job-info">
+                            <ul class="job-metainfo list-unstyle">
+                                <li class="fs-13 fw-medium bg-gin">
+                                    Full Time
+                                </li>
+                                <li class="fs-13 fw-medium bg-mystic">
+                                    Urgent
+                                </li>
+                            </ul>
+                            <h3 class="fs-18 fw-medium">
+                                <a routerLink="/job-details-sidebar">
+                                    Creative Graphic Designer for Dynamic Advertising Agency
+                                </a>
+                            </h3>
+                            <ul class="job-desc-meta list-unstyle">
+                                <li class="fs-14">
+                                    <img src="img/icons/map.svg" alt="Map Icon">
+                                    Florida, USA
+                                </li>
+                                <li class="fs-14">
+                                    <img src="img/icons/calendar.svg" alt="Calendar Icon">
+                                    12 Jul, 2024
+                                </li>
+                                <li class="fs-14">
+                                    <img src="img/icons/cash.svg" alt="Money Icon">
+                                    <span class="fw-semibold">$50</span>/hour
+                                </li>
+                            </ul>
+                            <div class="job-action d-flex flex-wrap align-items-center justify-content-between">
+                                <a routerLink="/job-details-sidebar" class="btn style-two">
+                                    Apply Now
+                                </a>
+                                <button class="add-to-bookmark d-flex flex-column justify-content-center align-items-center rounded-circle transition">
+                                    <img src="img/icons/bookmark.svg" alt="Bookmark Icon" class="transition">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+-->
+<!-- End Jobs -->
+<div
+class="testimonial-wrap style-one position-relative ptb-100"
+[ngClass]="{'d-none': router.url === '/index-2'}"
+>
+<div class="container">
+
+    <div class="testimonial-slider">
+        <owl-carousel-o [options]="testimonialSlides">
+            <ng-template carouselSlide>
+                <div class="testimonial-card style-one bg-gray round-20">
+                    <div class="testimonial-header d-flex align-items-center justify-content-between">
+
+                        <div class="ratings d-flex align-items-center justify-content-md-end">
+
+                            <ul class="rating list-unstyle">
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <h6>Sous titre xx</h6>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="client-quote fw-medium text-title">Ein guter Verkäufer kann einem potentiellen Kunden zeitnah ein passendes und somit attraktives Angebot machen. Es ist notwendig, dass man den Markt und die Bedürfnisse seiner Kunden kennt. Je mehr Informationen er hat und je mehr Erfahrung er darin hat, diese Informationen zu verknüpfen und die richtigen Schlüsse daraus zu ziehen, umso eher wird es ihm gelingen. Er bietet häufig dem Kunden etwas an, bevor dieser seine Bedürfnisse laut und deutlich äußert. Niemand, der - und sei es nur bruchstückhaft - etwas von Vertrieb versteht, würde diesen Aussagen widersprechen. Auch bei Bewerbungen für Führungspositionen handelt es sich um einen Vertriebsprozess, bei dem der Bewerber einen Arbeitsvertrag vom Unternehmen wünscht. Trotzdem bleiben die meisten Kandidaten passiv und warten darauf, bis der potenzielle Kunde ihre Bedürfnisse lautstark und deutlich kommuniziert (z.B. durch eine Anzeige) oder sogar einen Makler beauftragt, um einen passenden Dienstleister (Arbeitnehmer/Manager) zu finden.
+                        Es ist möglich, dass die Mehrheit der Bewerber passiv agiert, weil sie keine geeigneten Informationen haben. Sie sind nicht vertraut mit den Bedürfnissen ihrer möglichen Kunden. Sie sind noch nicht in der Lage, ihre Konkurrenten präzise zu bewerten.</p>
+
+                </div>
+            </ng-template>
+
+            <ng-template carouselSlide>
+                <div class="testimonial-card style-one bg-gray round-20">
+                    <div class="testimonial-header d-flex align-items-center justify-content-between">
+
+                        <div class="ratings d-flex align-items-center justify-content-md-end">
+
+                            <ul class="rating list-unstyle">
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <h6>FEHLLEITUNGEN UND (AUS UNSERER PERSPEKTIVE) UNNÖTIGER ZEITAUFWAND!</h6>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <p class="client-quote fw-medium text-title">Es ist nicht überraschend, dass keine Datenbank auf dem Markt Informationen darüber gibt, wie wahrscheinlich es ist, dass eine Top-Position im Unternehmen noch nicht besetzt ist, aber in naher Zukunft besetzt oder neu geschaffen werden wird.
+                         Die Fähigkeit, Informationen zu bewerten, einzuordnen und die richtigen Schlussfolgerungen daraus zu ziehen, ist notwendig, um solche Vorhersagen zu treffen. Wenn man versteht,</p>
+                         <ul class=" list-unstyle">
+                            <li><i class="ri-star-fill"></i>Welche Unternehmen planen einen Wechsel im Gesellschafterkreis, Aufsichts- oder Verwaltungsrat?</li>
+                            <li><i class="ri-star-fill"></i>Wie sich der Wechsel des CEO oder Sprechers der Geschäftsführung auf ähnliche Positionen auswirkt  </li>
+                            <li><i class="ri-star-fill"></i>Welche Unternehmen haben eine Altersnachfolge?</li>
+                            <li><i class="ri-star-fill"></i>Welche Unternehmen laufen Gefahr, verkauft, zerschlagen oder in die Muttergesellschaft integriert zu werden?</li>
+                            <li><i class="ri-star-fill"></i>Wie sich die politischen Bedingungen (Förderungsprogramme, umweltpolitische Projekte usw.) ändern,</li>
+                            <li><i class="ri-star-fill"></i>Welche Industrien in eine Krisensituation eintreten,</li>
+
+                        </ul>
+
+                        <p class="client-quote fw-medium text-title">Kann man daraus Schlussfolgerungen ziehen?.</p>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="testimonial-card style-one bg-gray round-20">
+                    <div class="testimonial-header d-flex align-items-center justify-content-between">
+
+                        <div class="ratings d-flex align-items-center justify-content-md-end">
+
+                            <ul class="rating list-unstyle">
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h3 >“die Erfahrung aus über 1.700 Top-Projekten”</h3>
+
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="testimonial-card style-one bg-gray round-20">
+                    <div class="testimonial-header d-flex align-items-center justify-content-between">
+
+                        <div class="ratings d-flex align-items-center justify-content-md-end">
+
+                            <ul class="rating list-unstyle">
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <h6>Wir haben alle diese Informationen. Daher:</h6>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                         <ul class=" list-unstyle">
+                            <li><i class="ri-star-fill"></i>Jedes Jahr erhalten wir etwa 150 bis 200 Kunden, die uns über ihr aktuelles Unternehmen, seine Wettbewerbssituation, seine Innovationsbereitschaft und ihre Investitionsbereitschaft informieren.</li>
+                            <li><i class="ri-star-fill"></i>Jedes Jahr führen wir über 300 Vorgespräche, in denen unsere Gesprächspartner detailliert erklären, warum sie das Unternehmen verlassen wollen oder müssen und wie es um das Unternehmen steht (Führungskultur, "Klima", Mitarbeitermotivation und -demotivation, Fluktuation, Krankenstand, abrupte Strategiewechsel usw.).    </li>
+                            <li><i class="ri-star-fill"></i>Pro Jahr erhalten wir 600 bis 700 Arbeitsvertragsangebote von unseren Kunden, die nicht nur Einblick in die Vertragsgestaltung des Unternehmens geben, sondern auch Organigramme, Boni-Regelungen usw. </li>
+
+
+                        </ul>
+
+
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="testimonial-card style-one bg-gray round-20">
+                    <div class="testimonial-header d-flex align-items-center justify-content-between">
+
+                        <div class="ratings d-flex align-items-center justify-content-md-end">
+
+                            <ul class="rating list-unstyle">
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                         <ul class=" list-unstyle">
+                            <li><i class="ri-star-fill"></i>Jedes Jahr führen wir über 2.000 Vorstellungsgespräche mit unseren Kunden durch, in denen ihnen detailliert erklärt wird, welche Aufgaben (und Probleme) im entsprechenden Unternehmen auf sie warten und welche strategischen Schritte geplant sind.</li>
+                            <li><i class="ri-star-fill"></i>Wir sind in der Lage, die vielen Informationen richtig einzuordnen, dank unserer Erfahrung aus mehr als Projekten, die wir in den letzten Jahren betreut haben.</li>
+                            <li><i class="ri-star-fill"></i>Wir bleiben immer noch in Kontakt mit der Mehrheit unserer früheren Kunden. In den meisten Fällen kann man in solchen Gesprächen gut herausfinden, welche Gedanken im entsprechenden Unternehmen vorherrschen.   </li>
+                            <li><i class="ri-star-fill"></i>Jedes Jahr erhalten wir über 3.000 Lebensläufe, die uns fragen, ob Inverses Headhunting die richtige Wahl ist. Auf diese Weise kann man ebenfalls herausfinden, welche Firmen momentan aktiv sind. Es ist üblich, dass Bewerber neben ihrem Lebenslauf auch Informationen über ihre aktuelle Position und die Situation des Unternehmens bereitstellen </li>
+
+
+                        </ul>
+
+
+                </div>
+            </ng-template>
+        </owl-carousel-o>
+    </div>
+</div>
+</div>
+
+<app-footer />
+
+<app-back-to-top />

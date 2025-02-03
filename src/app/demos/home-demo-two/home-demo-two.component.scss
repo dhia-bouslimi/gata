@@ -1,0 +1,236 @@
+.blog-area {
+    &:after {
+        top: 0;
+        left: 50%;
+        content: "";
+        z-index: -1;
+        height: 69.5%;
+        position: absolute;
+        border-radius: 10px;
+        width: calc(100% - 20px);
+        transform: translateX(-50%);
+        background-color: var(--neonGreenColor);
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+
+    .blog-area {
+        &:after {
+            width: 100%;
+            height: 48%;
+        }
+    }
+
+}
+
+/* Min width 1920px */
+@media only screen and (min-width: 1920px) {
+
+    .blog-area {
+        &:after {
+            width: calc(100% - 100px);
+        }
+    }
+
+}
+
+.hero-banner {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    overflow: hidden;
+    margin-top: 20px; /* Ajuste selon ton besoin */
+
+    
+    /* Image de fond avec effet gris */
+    &::before {
+        display: none; // Remove the duplicate background
+      }
+  }
+  .page-wrapper {
+    margin: 0;
+    padding: 0;
+    min-height: 35vh;
+    background: 
+    url('../../../../public/img/f.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }   
+  
+  .hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    
+    h1 {
+      font-size: 32px;
+      color: #333;
+    }
+    
+    h2 {
+      font-size: 28px;
+      color: #333;
+      margin: 0;
+    }
+  }
+  .quote-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    height: 200px;
+  
+    .quote-top, .quote-bottom {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 60px;
+      color: #1a5ae3;
+      margin-top: 20px;
+    }
+  
+    .quote-top {
+      top: 10px;
+    }
+    .quote-text-3 {
+        font-size: 30px;
+        color: #ffffff;
+        text-align: left;
+        margin: 0;
+        padding: 20px 0;
+      }
+    .quote-text {
+      font-size: 26px;
+      color: #ffffff;
+      text-align: center;
+      margin: 0;
+      padding: 20px 0;
+    }
+  
+    .quote-bottom {
+      margin-top: 200px;
+    }
+    
+  }
+
+  .quote-container1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: 40px;
+  
+   
+    .quote-text1 {
+      font-size: 26px;
+      color: #ffffff;
+      text-align: center;
+      margin: 0;
+      padding: 20px 0;
+    }
+  
+   
+    
+  }
+  .team-cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+  
+  .team-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .team-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .team-info {
+    padding: 15px;
+  }
+  
+  .team-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #0078d4;
+  }
+  
+  /* Ajustement pour les petits écrans */
+  @media (max-width: 768px) {
+    .team-cards-container {
+      flex-direction: column;
+      align-items: center;
+      top: 30%;
+    }
+  }
+  /* ----------- BANNER ----------- */
+
+
+.hero-title {
+  font-size: 30px;
+  color: #ffffff;
+  text-align: left;
+
+}
+
+/* ----------- TEAM CARDS ----------- */
+.team-cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  position: relative;
+  top:300px; /* Permet aux cartes de dépasser */
+  z-index: 2;
+}
+
+.team-card1 {
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.team-card1 img {
+  width: 100%;
+  height: 300px;
+}
+
+.team-info {
+  padding: 15px;
+}
+
+.team-title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* ----------- RESPONSIVE ----------- */
+@media (max-width: 768px) {
+  .team-cards-container {
+    flex-direction: column;
+    align-items: center;
+    top: -50px; /* Ajuste selon besoin */
+  }
+}

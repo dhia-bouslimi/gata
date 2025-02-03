@@ -1,0 +1,1125 @@
+<app-top-header />
+
+<app-navbar />
+
+<app-page-banner />
+
+<!-- Candidates -->
+ <!--
+<div class="container ptb-100">
+    <div class="row">
+        <div class="col-xl-8">
+            <div class="row align-items-center mb-20">
+                <div class="col-xl-4 col-md-4">
+                    <p class="filter-result">
+                        Showing <strong class="text-title">1 - 8</strong> of 211 results
+                    </p>
+                </div>
+                <div class="col-xxl-3 offset-xxl-2 col-xl-3 offset-xl-2 col-md-4">
+                    <select class="filter-cat border-0 mb-25">
+                        <option value="0">
+                            Sort By(Default)
+                        </option>
+                        <option value="1">
+                            Sort By Recent
+                        </option>
+                        <option value="2">
+                            Sort By Oldest
+                        </option>
+                    </select>
+                </div>
+                <div class="col-xxl-3 col-xl-3 col-md-4">
+                    <select class="filter-cat border-0 mb-25">
+                        <option value="0">
+                            08 per page
+                        </option>
+                        <option value="1">
+                            15 per page
+                        </option>
+                        <option value="2">
+                            20 per page
+                        </option>
+                    </select>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="candidate-card style-two text-center position-relative index-1 mb-30 transition">
+                        <button class="add-to-bookmark border-0 d-flex flex-column justify-content-center align-items-center rounded-circle position-absolute transition">
+                            <img src="img/icons/bookmark.svg" alt="Bookmark Icon" class="transition">
+                        </button>
+                        <span class="featured fs-13">
+                            Featured
+                        </span>
+                        <div class="candidate-img-wrap">
+                            <div class="candidate-img rounded-circle position-relative">
+                                <img src="img/candidates/candidate-7.png" alt="Candidate" class="rounded-circle">
+                                <span class="online-status active rounded-circle position-absolute d-inline-block"></span>
+                            </div>
+                            <h3 class="fs-20"><a routerLink="/candidate-details">
+                                Jenny Loren
+                            </a></h3>
+                            <span class="d-block">
+                                UI/UX Designer
+                            </span>
+                            <div class="expertise d-flex align-items-center justify-content-center">
+                                <span class="text-title fw-medium me-2">
+                                    Expertise:
+                                </span>
+                                <ul class="tag-list list-unstyle">
+                                    <li><a routerLink="/jobs-grid">
+                                        Web Design
+                                    </a></li>
+                                    <li><a routerLink="/jobs-grid">
+                                        Video Editing
+                                    </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="candidate-metainfo-wrap d-flex justify-content-between">
+                            <div class="candidate-metainfo d-flex align-items-center">
+                                <div class="meta-icon d-flex flex-column align-items-center justify-content-center round-10 bg-white">
+                                    <img src="img/icons/map-green.svg" alt="Map Icon">
+                                </div>
+                                <div class="meta-info">
+                                    <span class="d-block fs-14">
+                                        Location
+                                    </span>
+                                    <p class="text_dark fs-14 fw-semibold mb-0">
+                                        Alberta, CA
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="candidate-metainfo d-flex align-items-center justify-content-end">
+                                <div class="meta-icon d-flex flex-column align-items-center justify-content-center round-10 bg-white">
+                                    <img src="img/icons/coin.svg" alt="Map Icon">
+                                </div>
+                                <div class="meta-info">
+                                    <span class="d-block fs-14">
+                                        Salary
+                                    </span>
+                                    <p class="text_dark fs-14 fw-semibold mb-0">
+                                        $20-$30K/yr
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <a routerLink="/candidate-details" class="btn style-seven d-block">
+                            View Profile
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="candidate-card style-two text-center position-relative index-1 mb-30 transition">
+                        <button class="add-to-bookmark border-0 d-flex flex-column justify-content-center align-items-center rounded-circle position-absolute transition">
+                            <img src="img/icons/bookmark.svg" alt="Bookmark Icon" class="transition">
+                        </button>
+                        <span class="featured fs-13">
+                            Featured
+                        </span>
+                        <div class="candidate-img-wrap">
+                            <div class="candidate-img rounded-circle position-relative">
+                                <img src="img/candidates/candidate-8.png" alt="Candidate" class="rounded-circle">
+                                <span class="online-status active rounded-circle position-absolute d-inline-block"></span>
+                            </div>
+                            <h3 class="fs-18"><a routerLink="/candidate-details">
+                                Jonathon Ronan
+                            </a></h3>
+                            <span class="d-block">
+                                Java Developer
+                            </span>
+                            <div class="expertise d-flex align-items-center justify-content-center">
+                                <span class="text-title fw-medium me-2">
+                                    Expertise:
+                                </span>
+                                <ul class="tag-list list-unstyle">
+                                    <li><a routerLink="/jobs-grid">
+                                        Web Design
+                                    </a></li>
+                                    <li><a routerLink="/jobs-grid">
+                                        Coding
+                                    </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="candidate-metainfo-wrap d-flex justify-content-between">
+                            <div class="candidate-metainfo d-flex align-items-center">
+                                <div class="meta-icon d-flex flex-column align-items-center justify-content-center round-10 bg-white">
+                                    <img src="img/icons/map-green.svg" alt="Map Icon">
+                                </div>
+                                <div class="meta-info">
+                                    <span class="d-block fs-14">
+                                        Location
+                                    </span>
+                                    <p class="text_dark fs-14 fw-semibold mb-0">
+                                        Torento, CA
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="candidate-metainfo d-flex align-items-center">
+                                <div class="meta-icon d-flex flex-column align-items-center justify-content-center round-10 bg-white">
+                                    <img src="img/icons/coin.svg" alt="Map Icon">
+                                </div>
+                                <div class="meta-info">
+                                    <span class="d-block fs-14">
+                                        Salary
+                                    </span>
+                                    <p class="text_dark fs-14 fw-semibold mb-0">
+                                        $25 - $40K/yr
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <a routerLink="/candidate-details" class="btn style-seven d-block">
+                            View Profile
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="candidate-card style-two text-center position-relative index-1 mb-30 transition">
+                        <button class="add-to-bookmark border-0 d-flex flex-column justify-content-center align-items-center rounded-circle position-absolute transition">
+                            <img src="img/icons/bookmark.svg" alt="Bookmark Icon" class="transition">
+                        </button>
+                        <span class="featured fs-13">
+                            Featured
+                        </span>
+                        <div class="candidate-img-wrap">
+                            <div class="candidate-img rounded-circle position-relative">
+                                <img src="img/candidates/candidate-9.png" alt="Candidate" class="rounded-circle">
+                                <span class="online-status active rounded-circle position-absolute d-inline-block"></span>
+                            </div>
+                            <h3 class="fs-18"><a routerLink="/candidate-details">
+                                Jane Anderson
+                            </a></h3>
+                            <span class="d-block">
+                                Business Analytics
+                            </span>
+                            <div class="expertise d-flex align-items-center justify-content-center">
+                                <span class="text-title fw-medium me-2">
+                                    Expertise:
+                                </span>
+                                <ul class="tag-list list-unstyle">
+                                    <li><a routerLink="/jobs-grid">
+                                        Business
+                                    </a></li>
+                                    <li><a routerLink="/jobs-grid">
+                                        Marketing
+                                    </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="candidate-metainfo-wrap d-flex justify-content-between">
+                            <div class="candidate-metainfo d-flex align-items-center">
+                                <div class="meta-icon d-flex flex-column align-items-center justify-content-center round-10 bg-white">
+                                    <img src="img/icons/map-green.svg" alt="Map Icon">
+                                </div>
+                                <div class="meta-info">
+                                    <span class="d-block fs-14">
+                                        Location
+                                    </span>
+                                    <p class="text_dark fs-14 fw-semibold mb-0">
+                                        Florida, USA
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="candidate-metainfo d-flex align-items-center">
+                                <div class="meta-icon d-flex flex-column align-items-center justify-content-center round-10 bg-white">
+                                    <img src="img/icons/coin.svg" alt="Map Icon">
+                                </div>
+                                <div class="meta-info">
+                                    <span class="d-block fs-14">
+                                        Salary
+                                    </span>
+                                    <p class="text_dark fs-14 fw-semibold mb-0">
+                                        $25 - $30K/yr
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <a routerLink="/candidate-details" class="btn style-seven d-block">
+                            View Profile
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="candidate-card style-two text-center position-relative index-1 mb-30 transition">
+                        <button class="add-to-bookmark border-0 d-flex flex-column justify-content-center align-items-center rounded-circle position-absolute transition">
+                            <img src="img/icons/bookmark.svg" alt="Bookmark Icon" class="transition">
+                        </button>
+                        <span class="featured fs-13">
+                            Featured
+                        </span>
+                        <div class="candidate-img-wrap">
+                            <div class="candidate-img rounded-circle position-relative">
+                                <img src="img/candidates/candidate-10.png" alt="Candidate" class="rounded-circle">
+                                <span class="online-status active rounded-circle position-absolute d-inline-block"></span>
+                            </div>
+                            <h3 class="fs-18"><a routerLink="/candidate-details">
+                                Jhon Peterson
+                            </a></h3>
+                            <span class="d-block">
+                                Animator
+                            </span>
+                            <div class="expertise d-flex align-items-center justify-content-center">
+                                <span class="text-title fw-medium me-2">
+                                    Expertise:
+                                </span>
+                                <ul class="tag-list list-unstyle">
+                                    <li><a routerLink="/jobs-grid">
+                                        Animation
+                                    </a></li>
+                                    <li><a routerLink="/jobs-grid">
+                                        Illustration
+                                    </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="candidate-metainfo-wrap d-flex justify-content-between">
+                            <div class="candidate-metainfo d-flex align-items-center">
+                                <div class="meta-icon d-flex flex-column align-items-center justify-content-center round-10 bg-white">
+                                    <img src="img/icons/map-green.svg" alt="Map Icon">
+                                </div>
+                                <div class="meta-info">
+                                    <span class="d-block fs-14">
+                                        Location
+                                    </span>
+                                    <p class="text_dark fs-14 fw-semibold mb-0">
+                                        Florida, USA
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="candidate-metainfo d-flex align-items-center">
+                                <div class="meta-icon d-flex flex-column align-items-center justify-content-center round-10 bg-white">
+                                    <img src="img/icons/coin.svg" alt="Map Icon">
+                                </div>
+                                <div class="meta-info">
+                                    <span class="d-block fs-14">
+                                        Salary
+                                    </span>
+                                    <p class="text_dark fs-14 fw-semibold mb-0">
+                                        $35 - $50K/yr
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <a routerLink="/candidate-details" class="btn style-seven d-block">
+                            View Profile
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="candidate-card style-two text-center position-relative index-1 mb-30 transition">
+                        <button class="add-to-bookmark border-0 d-flex flex-column justify-content-center align-items-center rounded-circle position-absolute transition">
+                            <img src="img/icons/bookmark.svg" alt="Bookmark Icon" class="transition">
+                        </button>
+                        <span class="featured fs-13">
+                            Featured
+                        </span>
+                        <div class="candidate-img-wrap">
+                            <div class="candidate-img rounded-circle position-relative">
+                                <img src="img/candidates/candidate-11.png" alt="Candidate" class="rounded-circle">
+                                <span class="online-status active rounded-circle position-absolute d-inline-block"></span>
+                            </div>
+                            <h3 class="fs-18"><a routerLink="/candidate-details">
+                                Skyler White
+                            </a></h3>
+                            <span class="d-block">
+                                Graphic Designer
+                            </span>
+                            <div class="expertise d-flex align-items-center justify-content-center">
+                                <span class="text-title fw-medium me-2">
+                                    Expertise:
+                                </span>
+                                <ul class="tag-list list-unstyle">
+                                    <li><a routerLink="/jobs-grid">
+                                        Design
+                                    </a></li>
+                                    <li><a routerLink="/jobs-grid">
+                                        Photoshop
+                                    </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="candidate-metainfo-wrap d-flex justify-content-between">
+                            <div class="candidate-metainfo d-flex align-items-center">
+                                <div class="meta-icon d-flex flex-column align-items-center justify-content-center round-10 bg-white">
+                                    <img src="img/icons/map-green.svg" alt="Map Icon">
+                                </div>
+                                <div class="meta-info">
+                                    <span class="d-block fs-14">
+                                        Location
+                                    </span>
+                                    <p class="text_dark fs-14 fw-semibold mb-0">
+                                        Florida, USA
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="candidate-metainfo d-flex align-items-center">
+                                <div class="meta-icon d-flex flex-column align-items-center justify-content-center round-10 bg-white">
+                                    <img src="img/icons/coin.svg" alt="Map Icon">
+                                </div>
+                                <div class="meta-info">
+                                    <span class="d-block fs-14">
+                                        Salary
+                                    </span>
+                                    <p class="text_dark fs-14 fw-semibold mb-0">
+                                        $25 - $30K/yr
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <a routerLink="/candidate-details" class="btn style-seven d-block">
+                            View Profile
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="candidate-card style-two text-center position-relative index-1 mb-30 transition">
+                        <button class="add-to-bookmark border-0 d-flex flex-column justify-content-center align-items-center rounded-circle position-absolute transition">
+                            <img src="img/icons/bookmark.svg" alt="Bookmark Icon" class="transition">
+                        </button>
+                        <span class="featured fs-13">
+                            Featured
+                        </span>
+                        <div class="candidate-img-wrap">
+                            <div class="candidate-img rounded-circle position-relative">
+                                <img src="img/candidates/candidate-12.png" alt="Candidate" class="rounded-circle">
+                                <span class="online-status active rounded-circle position-absolute d-inline-block"></span>
+                            </div>
+                            <h3 class="fs-18"><a routerLink="/candidate-details">
+                                Victor James
+                            </a></h3>
+                            <span class="d-block">
+                                Java Developer
+                            </span>
+                            <div class="expertise d-flex align-items-center justify-content-center">
+                                <span class="text-title fw-medium me-2">
+                                    Expertise:
+                                </span>
+                                <ul class="tag-list list-unstyle">
+                                    <li><a routerLink="/jobs-grid">
+                                        Development
+                                    </a></li>
+                                    <li><a routerLink="/jobs-grid">
+                                        Coding
+                                    </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="candidate-metainfo-wrap d-flex justify-content-between">
+                            <div class="candidate-metainfo d-flex align-items-center">
+                                <div class="meta-icon d-flex flex-column align-items-center justify-content-center round-10 bg-white">
+                                    <img src="img/icons/map-green.svg" alt="Map Icon">
+                                </div>
+                                <div class="meta-info">
+                                    <span class="d-block fs-14">
+                                        Location
+                                    </span>
+                                    <p class="text_dark fs-14 fw-semibold mb-0">
+                                        Torento, CA
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="candidate-metainfo d-flex align-items-center">
+                                <div class="meta-icon d-flex flex-column align-items-center justify-content-center round-10 bg-white">
+                                    <img src="img/icons/coin.svg" alt="Map Icon">
+                                </div>
+                                <div class="meta-info">
+                                    <span class="d-block fs-14">
+                                        Salary
+                                    </span>
+                                    <p class="text_dark fs-14 fw-semibold mb-0">
+                                        $40 - $50K/yr
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <a routerLink="/candidate-details" class="btn style-seven d-block">
+                            View Profile
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="candidate-card style-two text-center position-relative index-1 mb-30 transition">
+                        <button class="add-to-bookmark border-0 d-flex flex-column justify-content-center align-items-center rounded-circle position-absolute transition">
+                            <img src="img/icons/bookmark.svg" alt="Bookmark Icon" class="transition">
+                        </button>
+                        <span class="featured fs-13">
+                            Featured
+                        </span>
+                        <div class="candidate-img-wrap">
+                            <div class="candidate-img rounded-circle position-relative">
+                                <img src="img/candidates/candidate-13.png" alt="Candidate" class="rounded-circle">
+                                <span class="online-status active rounded-circle position-absolute d-inline-block"></span>
+                            </div>
+                            <h3 class="fs-18"><a routerLink="/candidate-details">
+                                Angela Carter
+                            </a></h3>
+                            <span class="d-block">
+                                Digital Marketer
+                            </span>
+                            <div class="expertise d-flex align-items-center justify-content-center">
+                                <span class="text-title fw-medium me-2">
+                                    Expertise:
+                                </span>
+                                <ul class="tag-list list-unstyle">
+                                    <li><a routerLink="/jobs-grid">
+                                        Business
+                                    </a></li>
+                                    <li><a routerLink="/jobs-grid">
+                                        Marketing
+                                    </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="candidate-metainfo-wrap d-flex justify-content-between">
+                            <div class="candidate-metainfo d-flex align-items-center">
+                                <div class="meta-icon d-flex flex-column align-items-center justify-content-center round-10 bg-white">
+                                    <img src="img/icons/map-green.svg" alt="Map Icon">
+                                </div>
+                                <div class="meta-info">
+                                    <span class="d-block fs-14">
+                                        Location
+                                    </span>
+                                    <p class="text_dark fs-14 fw-semibold mb-0">
+                                        Florida, USA
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="candidate-metainfo d-flex align-items-center">
+                                <div class="meta-icon d-flex flex-column align-items-center justify-content-center round-10 bg-white">
+                                    <img src="img/icons/coin.svg" alt="Map Icon">
+                                </div>
+                                <div class="meta-info">
+                                    <span class="d-block fs-14">
+                                        Salary
+                                    </span>
+                                    <p class="text_dark fs-14 fw-semibold mb-0">
+                                        $25 - $30K/yr
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <a routerLink="/candidate-details" class="btn style-seven d-block">
+                            View Profile
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="candidate-card style-two text-center position-relative index-1 mb-30 transition">
+                        <button class="add-to-bookmark border-0 d-flex flex-column justify-content-center align-items-center rounded-circle position-absolute transition">
+                            <img src="img/icons/bookmark.svg" alt="Bookmark Icon" class="transition">
+                        </button>
+                        <span class="featured fs-13">
+                            Featured
+                        </span>
+                        <div class="candidate-img-wrap">
+                            <div class="candidate-img rounded-circle position-relative">
+                                <img src="img/candidates/candidate-14.png" alt="Candidate" class="rounded-circle">
+                                <span class="online-status active rounded-circle position-absolute d-inline-block"></span>
+                            </div>
+                            <h3 class="fs-18"><a routerLink="/candidate-details">
+                                Jessy Pinkman
+                            </a></h3>
+                            <span class="d-block">
+                                JS Developer
+                            </span>
+                            <div class="expertise d-flex align-items-center justify-content-center">
+                                <span class="text-title fw-medium me-2">
+                                    Expertise:
+                                </span>
+                                <ul class="tag-list list-unstyle">
+                                    <li><a routerLink="/jobs-grid">
+                                        Software
+                                    </a></li>
+                                    <li><a routerLink="/jobs-grid">
+                                        Coding
+                                    </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="candidate-metainfo-wrap d-flex justify-content-between">
+                            <div class="candidate-metainfo d-flex align-items-center">
+                                <div class="meta-icon d-flex flex-column align-items-center justify-content-center round-10 bg-white">
+                                    <img src="img/icons/map-green.svg" alt="Map Icon">
+                                </div>
+                                <div class="meta-info">
+                                    <span class="d-block fs-14">
+                                        Location
+                                    </span>
+                                    <p class="text_dark fs-14 fw-semibold mb-0">
+                                        Torento, CA
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="candidate-metainfo d-flex align-items-center">
+                                <div class="meta-icon d-flex flex-column align-items-center justify-content-center round-10 bg-white">
+                                    <img src="img/icons/coin.svg" alt="Map Icon">
+                                </div>
+                                <div class="meta-info">
+                                    <span class="d-block fs-14">
+                                        Salary
+                                    </span>
+                                    <p class="text_dark fs-14 fw-semibold mb-0">
+                                        $45 - $60K/yr
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <a routerLink="/candidate-details" class="btn style-seven d-block">
+                            View Profile
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <ul class="page-nav d-flex align-items-center justify-content-center list-unstyle mt-2">
+                <li>
+                    <a routerLink="." class="d-flex flex-column align-items-center justify-content-center rounded-circle fw-semibold text-title">
+                        <i class="ri-arrow-left-line"></i>
+                    </a>
+                </li>
+                <li>
+                    <a routerLink="." class="d-flex flex-column align-items-center justify-content-center rounded-circle fw-semibold">
+                        1
+                    </a>
+                </li>
+                <li>
+                    <a routerLink="." class="active d-flex flex-column align-items-center justify-content-center rounded-circle fw-semibold text-title">
+                        2
+                    </a>
+                </li>
+                <li>
+                    <a routerLink="." class="d-flex flex-column align-items-center justify-content-center rounded-circle fw-semibold text-title">
+                        3
+                    </a>
+                </li>
+                <li>
+                    <a routerLink="." class="d-flex flex-column align-items-center justify-content-center rounded-circle fw-semibold text-title">
+                        <i class="ri-arrow-right-line"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-xl-4">
+            <div class="sidebar style-one bg-aqua round-10">
+                <h3 class="fs-24 sidebar-title">
+                    Filter By
+                </h3>
+                <div class="sidebar-widget">
+                    <h3 class="sidebar-widget-title fs-18 fw-semibold">
+                        Location
+                    </h3>
+                    <div class="location-filter position-relative">
+                        <img src="img/icons/map-green-2.svg" alt="Map Icon" class="position-absolute">
+                        <select class="bg-white border-0 round-4 text-title">
+                            <option value="0">
+                                Montreal, Canada
+                            </option>
+                            <option value="1">
+                                Torento, Canada
+                            </option>
+                            <option value="2">
+                                Florida, USA
+                            </option>
+                            <option value="3">
+                                New York, USA
+                            </option>
+                            <option value="4">
+                                London, UK
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="sidebar-widget">
+                    <h3 class="sidebar-widget-title fs-18 fw-semibold">
+                        Categories
+                    </h3>
+                    <select name="category-select" id="category-select" class="bg-white round-4 border-0 text-title mb-10">
+                        <option value="0">
+                            Data Science
+                        </option>
+                        <option value="1">
+                            Digital Marketing
+                        </option>
+                        <option value="2">
+                            Video Editing
+                        </option>
+                        <option value="3">
+                            Web Development
+                        </option>
+                        <option value="4">
+                            Content Marketing
+                        </option>
+                    </select>
+                    <ul class="tag-list style-two list-unstyle mt-0">
+                        <li>
+                            <a routerLink="/candidates-grid">
+                                Graphic Design <img src="img/icons/close-red.svg" alt="Icon">
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/candidates-grid">
+                                Video Editiong <img src="img/icons/close-red.svg" alt="Icon">
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/candidates-grid">
+                                Web Development <img src="img/icons/close-red.svg" alt="Icon">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sidebar-widget">
+                    <h3 class="sidebar-widget-title fs-18 fw-semibold">
+                        Job Type
+                    </h3>
+                    <div class="filter-radio-group">
+                        <div class="form-group">
+                            <input type="radio" id="test1" name="radio-group_one">
+                            <label for="test1" class="d-flex align-items-center justify-content-between">
+                                <span class="text-title">
+                                    Full Time
+                                </span>
+                                <span class="fs-14 d-inline-block bg-white text-green">
+                                    12
+                                </span>
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <input type="radio" id="test2" name="radio-group_one">
+                            <label for="test2" class="d-flex align-items-center justify-content-between">
+                                <span class="text-title">
+                                    Part Time
+                                </span>
+                                <span class="fs-14 d-inline-block bg-white text-green">
+                                    32
+                                </span>
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <input type="radio" id="test3" name="radio-group_one">
+                            <label for="test3" class="d-flex align-items-center justify-content-between">
+                                <span class="text-title">
+                                    Fixed Salary
+                                </span>
+                                <span class="fs-14 d-inline-block bg-white text-green">
+                                    17
+                                </span>
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <input type="radio" id="test4" name="radio-group_one">
+                            <label for="test4" class="d-flex align-items-center justify-content-between">
+                                <span class="text-title">
+                                    Freelance
+                                </span>
+                                <span class="fs-14 d-inline-block bg-white text-green">
+                                    04
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-widget">
+                    <h3 class="sidebar-widget-title fs-18 fw-semibold">
+                        Job Type
+                    </h3>
+                    <div class="filter-radio-group">
+                        <div class="form-group">
+                            <input type="radio" id="test5" name="radio-group_two">
+                            <label for="test5" class="d-flex align-items-center justify-content-between">
+                                <span class="text-title">
+                                    Fresher
+                                </span>
+                                <span class="fs-14 d-inline-block bg-white text-green">
+                                    12
+                                </span>
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <input type="radio" id="test6" name="radio-group_two">
+                            <label for="test6" class="d-flex align-items-center justify-content-between">
+                                <span class="text-title">
+                                    Intermediate
+                                </span>
+                                <span class="fs-14 d-inline-block bg-white text-green">
+                                    32
+                                </span>
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <input type="radio" id="test7" name="radio-group_two">
+                            <label for="test7" class="d-flex align-items-center justify-content-between">
+                                <span class="text-title">
+                                    Internship
+                                </span>
+                                <span class="fs-14 d-inline-block bg-white text-green">
+                                    17
+                                </span>
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <input type="radio" id="test8" name="radio-group_two">
+                            <label for="test8" class="d-flex align-items-center justify-content-between">
+                                <span class="text-title">
+                                    1-2 Years
+                                </span>
+                                <span class="fs-14 d-inline-block bg-white text-green">
+                                    04
+                                </span>
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <input type="radio" id="test8" name="radio-group_two">
+                            <label for="test8" class="d-flex align-items-center justify-content-between">
+                                <span class="text-title">
+                                    3-5 Years
+                                </span>
+                                <span class="fs-14 d-inline-block bg-white text-green">
+                                    04
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-widget">
+                    <h3 class="sidebar-widget-title fs-18 fw-semibold">
+                        Salary Range
+                    </h3>
+                    <div class="price-range-slider">
+                        <div class="price d-flex flex-wrap align-items-center justify-content-between">
+                            <span class="from text-title">
+                                {{ minValue }}
+                            </span>
+                            <span class="to text-title">
+                                {{ maxValue }}
+                            </span>
+                            <select class="month-filter">
+                                <option value="1">
+                                    Monthly
+                                </option>
+                                <option value="2">
+                                    Yearly
+                                </option>
+                            </select>
+                        </div>
+                        <div class="multi-range">
+                            <input type="range" min="0" max="1000" [(ngModel)]="minValue" (input)="onSliderChange()">
+                            <input type="range" min="0" max="1000" [(ngModel)]="maxValue" (input)="onSliderChange()">
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-widget">
+                    <h3 class="sidebar-widget-title fs-18 fw-semibold">
+                        Career Level
+                    </h3>
+                    <select class="h-54 bg-white border-0 round-4 text-title">
+                        <option value="0">
+                            Entry Level
+                        </option>
+                        <option value="1">
+                            Junior Level
+                        </option>
+                        <option value="2">
+                            Mid Level
+                        </option>
+                        <option value="3">
+                            Senior Level
+                        </option>
+                    </select>
+                </div>
+                <div class="sidebar-widget">
+                    <h3 class="sidebar-widget-title fs-18 fw-semibold">
+                        Date Posted
+                    </h3>
+                    <div class="filter-radio-group">
+                        <div class="form-group">
+                            <input type="radio" id="test50" name="radio-group_three">
+                            <label for="test50" class="d-flex align-items-center justify-content-between">
+                                <span class="text-title">
+                                    Any Time
+                                </span>
+                                <span class="fs-14 d-inline-block bg-white text-green">
+                                    12
+                                </span>
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <input type="radio" id="test51" name="radio-group_three">
+                            <label for="test51" class="d-flex align-items-center justify-content-between">
+                                <span class="text-title">
+                                    Past Month
+                                </span>
+                                <span class="fs-14 d-inline-block bg-white text-green">
+                                    32
+                                </span>
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <input type="radio" id="test52" name="radio-group_three">
+                            <label for="test52" class="d-flex align-items-center justify-content-between">
+                                <span class="text-title">
+                                    Past Weeks
+                                </span>
+                                <span class="fs-14 d-inline-block bg-white text-green">
+                                    17
+                                </span>
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <input type="radio" id="test53" name="radio-group_three">
+                            <label for="test53" class="d-flex align-items-center justify-content-between">
+                                <span class="text-title">
+                                    Past 24 Hours
+                                </span>
+                                <span class="fs-14 d-inline-block bg-white text-green">
+                                    04
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-widget">
+                    <div class="toggle-switch d-flex flex-wrap align-items-center justify-content-between">
+                        <h3 class="sidebar-widget-title fs-18 fw-semibold mb-0">
+                            Jobs Under 10 Applicants
+                        </h3>
+                        <div class="pricing-switch-wrap style-one position-relative d-flex justify-content-end ms-auto me-0" data-cue="slideInUp">
+                            <label class="pricing_switch">
+                                <input type="checkbox" id="togBtn">
+                                <span class="pricing_slider round">
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-widget">
+                    <h3 class="sidebar-widget-title fs-18 fw-semibold">
+                        Tags
+                    </h3>
+                    <ul class="tag-list list-unstyle">
+                        <li>
+                            <a routerLink="/jobs-grid">
+                                Graphic Design
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/jobs-grid">
+                                Video Editiong
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/jobs-grid">
+                                Jobs
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/jobs-grid">
+                                Designer
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/jobs-grid">
+                                Finance
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/jobs-grid">
+                                Career
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/jobs-grid">
+                                Frontend
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/jobs-grid">
+                                Software
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/jobs-grid">
+                                SEO
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+-->
+<!-- End Candidates -->
+ <!-- theme pour les zones de texte -->
+<div
+class="testimonial-wrap style-one position-relative ptb-100"
+[ngClass]="{'d-none': router.url === '/index-2'}"
+>
+<div class="container">
+    <ul class="feature-list list-unstyle">
+        <li class="position-relative  fs-18 fw-semibold">
+            <img src="img/icons/check.svg" alt="Check Icon">
+             <p> voir le formulaire du site</p>
+        </li>
+        <li class="position-relative  fs-18 fw-semibold">
+            <img src="img/icons/check.svg" alt="Check Icon"> <p> Als Mitglieder von Business Angels sind wir vertraut mit der Gründerszene und sind in der Lage, die positiven und negativen Entwicklungen zu unterscheiden. </p>
+        </li>
+    </ul>
+
+    <div class="testimonial-slider">
+        <owl-carousel-o [options]="testimonialSlides">
+
+            <ng-template carouselSlide>
+                <div class="testimonial-card style-one bg-gray round-20">
+                    <div class="testimonial-header d-flex align-items-center justify-content-between">
+
+                        <div class="ratings d-flex align-items-center justify-content-md-end">
+
+                            <ul class="rating list-unstyle">
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <h6>Gesundheitsvorteile </h6>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="client-quote fw-medium text-title">"Wie wird die Vergütung für diese Position in diesem Unternehmen sein?" Um sicherzustellen, dass man sich mit seinen gehaltlichen Vorstellungen nicht aus dem Rennen schießt (oder, um zu erkennen, dass ein Vorstellungsgespräch in diesem Unternehmen eigentlich gar keinen Sinn macht), stellen wir Ihnen hier einen Gehaltsrechner zur Verfügung, der regelmäßig von uns aktualisiert wird und mit wenigen Klicks sichtbar macht, wie viel man verdient. Dieser Gehaltsrechner wird regelmäßig von uns aktualisiert. Es ist keine Frage,
+                         dass das Gehalt, das sich dann ergibt, ein statistischer Wert ist, aber es ist völlig ausreichend, um den Rahmen zu beschreiben, in dem sich das Gehalt bewegen wird. Es ist gut zu wissen, was andere Menschen verdienen.</p>
+
+                </div>
+            </ng-template>
+
+            <ng-template carouselSlide>
+                <div class="testimonial-card style-one bg-gray round-20">
+                    <div class="testimonial-header d-flex align-items-center justify-content-between">
+
+                        <div class="ratings d-flex align-items-center justify-content-md-end">
+
+                            <ul class="rating list-unstyle">
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <h6>Die Jobmatrix </h6>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <p class="client-quote fw-medium text-title">Wir haben eine Matrix entwickelt, um Ihre Angebote systematisch auszuwerten, da nicht alle unsere Kunden fünf oder sechs Stellenangebote erhalten.
+                         Bei drei oder vier Angeboten kann die Auswahl unübersichtlich und die Entscheidung schwierig werden. Die Jobmatrix wird Ihnen helfen, sich über Ihre Auswahlkriterien und deren Bedeutung zu informieren und Ihnen eine übersichtliche Grundlage für Ihre Entscheidung zu geben.</p>
+
+                </div>
+            </ng-template>
+
+            <ng-template carouselSlide>
+                <div class="testimonial-card style-one bg-gray round-20">
+                    <div class="testimonial-header d-flex align-items-center justify-content-between">
+
+                        <div class="ratings d-flex align-items-center justify-content-md-end">
+
+                            <ul class="rating list-unstyle">
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <h6>Einkommenssteigernde Freiheit </h6>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="client-quote fw-medium text-title">Viele Menschen glauben, dass es als Selbständiger, Interims-Manager, Freiberufler oder andere Berufe wesentlich einfacher und sogar besser geht, als in einer Festanstellung zu arbeiten. Mit unserem "Einkommensrechner Freiberuflichkeit" können Sie schnell herausfinden, ob diese Einschätzung korrekt ist und zu welchem Tagessatz Sie sich verkaufen müssten, um Ihr aktuelles Einkommensniveau aufrechtzuerhalten. Aber achten Sie darauf, nicht zu optimistisch zu sein. Es ist unwahrscheinlich, dass Sie mehr als 200 Arbeitstage pro Jahr „verkaufen“ können, und das wäre bereits ein Vollzeitjob</p>
+
+                </div>
+            </ng-template>
+
+            <ng-template carouselSlide>
+                <div class="testimonial-card style-one bg-gray round-20">
+                    <div class="testimonial-header d-flex align-items-center justify-content-between">
+
+                        <div class="ratings d-flex align-items-center justify-content-md-end">
+
+                            <ul class="rating list-unstyle">
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <h6>Aussichtsrat gesucht </h6>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="client-quote fw-medium text-title">Am Ende ihrer operativen Karriere streben viele Top-Manager nach einer Position im Aufsichtsrat. Andere möchten ihr Wissen und ihre Berufserfahrung der letzten Jahrzehnte weitergeben, während andere sich dadurch die "Krönung" ihrer Karriere und zusätzliche Reputation erhoffen. Es besteht die Möglichkeit, zusätzliche Einnahmen zu erzielen, ohne weiterhin für den Betrieb verantwortlich zu sein. Viele Menschen verbinden das "Liebäugeln" mit einer solchen Position einfach mit der Sorge,
+                         dass sie nach dem Ausscheiden aus der operativen Verantwortung in der beruflichen Bedeutungslosigkeit verschwinden. In unserem Vorstandsportal finden Sie Informationen darüber, wie man Mitglied des Aufsichtsrats wird und welche Vergütung und zeitliche Belastung zu erwarten ist.</p>
+
+                </div>
+            </ng-template>
+
+            <ng-template carouselSlide>
+                <div class="testimonial-card style-one bg-gray round-20">
+                    <div class="testimonial-header d-flex align-items-center justify-content-between">
+
+                        <div class="ratings d-flex align-items-center justify-content-md-end">
+
+                            <ul class="rating list-unstyle">
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <h6>RICHTER </h6>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="client-quote fw-medium text-title">Wie viel Geld ist notwendig, um einen ausreichenden Ruhestand zu finanzieren, wenn man auf der hohen Kante ist? Welche Altersgrenze lässt sich erreichen, um in den Ruhestand zu gehen? Wir werden immer wieder mit diesen Fragen konfrontiert. Es sei denn, unsere Kunden sprechen mit uns über ihre berufliche und persönliche Zukunftsplanung oder glauben auf eine "hohe Abfindung" zu hoffen, mit der man häufig fälschlicherweise gerechnet hat.
+                         Im Vorstandsportal stellen wir Ihnen einen Computer zur Verfügung, der Ihnen diese Frage sofort beantworten wird. Ehrlich, ungeschminkt und häufig mit unerwarteten Ergebnissen.</p>
+
+                </div>
+            </ng-template>
+
+            <ng-template carouselSlide>
+                <div class="testimonial-card style-one bg-gray round-20">
+                    <div class="testimonial-header d-flex align-items-center justify-content-between">
+
+                        <div class="ratings d-flex align-items-center justify-content-md-end">
+
+                            <ul class="rating list-unstyle">
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <h6>Mitarbeiterdossiers </h6>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="client-quote fw-medium text-title">Wir stellen unseren Kunden umfassende Unternehmens- und Managementdossiers (etwa 40 bis 100 DIN A 4-Seiten) zur Verfügung, um sie auf die zu führenden Vorstellungsgespräche vorzubereiten. Diese enthalten normalerweise Informationen über das Management, die Gesellschafter und Anteilseigner, die Geschäftstätigkeit, die Struktur des Unternehmens, die Beteiligungen sowie Bilanzinformationen zum Geschäftsmodell sowie Wirtschaftsberichte. Außerdem ist die Anzahl der Kunden, die innerhalb von weniger als einem Jahr erneut bei uns Kunde werden, weniger als ein Prozent. Unsere Kunden haben sicherlich mehrere Verträge zur Auswahl und sind daher wesentlich kritischer, wenn sie sich für ein Unternehmen entscheiden. Die erfreuliche Quote beruht darauf,
+                        dass wir aufgrund der oben genannten Informationen hervorragend bewerten können, welches Vertragsangebot für unseren Kunden wirklich empfehlenswert ist und welches er lieber ablehnen sollte.</p>
+
+                </div>
+            </ng-template>
+        </owl-carousel-o>
+    </div>
+    <ul class="feature-list list-unstyle">
+
+        <li class="position-relative  fs-18 fw-semibold">
+            <img src="img/icons/check.svg" alt="Check Icon"> <p>Es ist immer vorteilhaft, gut informiert zu sein!  </p>
+        </li>
+    </ul>
+</div>
+</div>
+
+<!-- fin -->
+
+<app-footer />
+
+<app-back-to-top />

@@ -1,0 +1,183 @@
+<footer
+    class="footer-wrap style-one position-relative bg-gray index-1 pt-100"
+    [ngClass]="{'style-one bg_dark': router.url === '/index-2' || router.url === '/index-3' || router.url === '/employers-grid'}"
+>
+    <div class="container">
+        <div class="row pb-70">
+            <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-5">
+                <div class="footer-widget mb-30">
+                    <a routerLink="/" class="logo d-inline-block">
+                        <img src="img/gataLogo.png" alt="Logo" class="logo-light">
+                       <!-- <img src="img/logo-white.svg" alt="Logo" class="logo-dark">-->
+                    </a>
+                    <img src="img/footer-shape.png" alt="Logo" class="footer-shape d-block">
+                </div>
+            </div>
+            <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-sm-6 ps-xxl-55 pe-xxl-0">
+                <div class="footer-widget mb-30">
+                    <h4 class="fs-18 fw-bold text-title widget-title">
+                        GATA GmbH / DBRUECKE.DE
+                    </h4>
+                    <ul class="footer-menu list-unstyle">
+                        <li>
+                            <p routerLink="/jobs-left-sidebar">
+                                AMTSGERICHT :KÖLN
+                            </p>
+                        </li>
+                        <li>
+                            <p routerLink="/employers-grid">
+                                HBR:93155
+                            </p>
+                        </li>
+                        <li>
+                            <p routerLink="/candidates-left-sidebar">
+                                ST.-NR.:219/5814/3869
+                            </p>
+                        </li>
+                        <li>
+                            <p routerLink="/pricing-plan">
+                                UST.-IDNR. :DE322902266
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xxl-3 col-xl-2 col-lg-2 col-md-3 col-sm-6 ps-xxl-65">
+                <div class="footer-widget mb-30">
+                    <h4 class="fs-18 fw-bold text-title widget-title">
+                        Addresse
+                    </h4>
+                    <ul class="footer-menu list-unstyle">
+                        <li>
+                            <p routerLink="/about-us">
+                                Cologne
+                            </p>
+                        </li>
+                        <li>
+                            <p routerLink="/blog-left-sidebar">
+                                <img src="img/OldRessources/phone1.png" alt="Icon" style="width: 20px; height: 20px;">
+                                +49 1776440005
+                            </p>
+                        </li>
+                        <li>
+                            <p routerLink="/blog-left-sidebar">
+                                <img src="img/OldRessources/phone1.png" alt="Icon" style="width: 20px; height: 20px;">
+                                +49 22154814320
+                            </p>
+                        </li>
+                        <li>
+                            <p routerLink="/blog-left-sidebar">
+                                <img src="img/OldRessources/phone1.png" alt="Icon" style="width: 20px; height: 20px;">
+                                +49 32123404467
+                            </p>
+                        </li>
+                        <li>
+                            <p routerLink="/faq">
+                                <img src="img/OldRessources/mail.png" alt="Icon" style="width: 20px; height: 20px;">
+                                info&#64;gatagmbh.com
+                            </p>
+
+                        </li>
+                        <li>
+                            <p routerLink="/faq">
+                                <img src="img/OldRessources/mail.png" alt="Icon" style="width: 20px; height: 20px;">
+                                info&#64;gatagmbh.com
+                            </p>
+
+                        </li>
+
+                        <li>
+                            <p routerLink="/contact-us">
+                                <img src="img/OldRessources/whats.png" alt="Icon" style="width: 20px; height: 20px;">
+                                +49 17660305329
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xxl-2 col-xl-3 col-lg-3 col-md-5 col-sm-6 ps-xxl-0">
+                <div class="footer-widget mb-30">
+                    <h4 class="fs-18 fw-bold text-title widget-title">
+                        ANGABEN GEMÄSS§5TMG
+                    </h4>
+                    <ul class="footer-menu list-unstyle">
+                        <li>
+                            <p routerLink="/terms-conditions">
+                                Geschäftsführung
+                            </p>
+                        </li>
+                        <li>
+                            <p routerLink="/terms-conditions">
+                                GATA GMBH
+                            </p>
+                        </li>
+                        <li>
+                            <p routerLink="/privacy-policy">
+                                GOTTESWAG 56
+                            </p>
+                        </li>
+                        <li>
+                            <p routerLink="/privacy-policy">
+                                50969 Köln
+                            </p>
+                        </li>
+                        <li>
+                            <p routerLink="/privacy-policy">
+                                VERTRETEN DURCH
+                            </p>
+                        </li>
+                        <li>
+                            <p routerLink="/privacy-policy">
+                                H.Othman
+                            </p>
+                        </li>
+                        <li>
+                            <p routerLink="/privacy-policy">
+                                Z.Sellemi
+                            </p>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-7 col-sm-6 ps-xxl-4 pe-xxl-1">
+                <div class="footer-widget mb-30">
+                    <h4 class="fs-18 fw-bold text-title widget-title">
+                        Subscribe
+                    </h4>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Email" class="bg-white border-0 round-6">
+                        <button
+                            class="btn style-one d-block w-100"
+                            [ngClass]="{'style-two': router.url === '/index-2' || router.url === '/index-3' || router.url === '/employers-grid'}"
+                        >
+                            Subscribe Now
+                        </button>
+                    </form>
+                    <p class="fs-14 mb-0">
+                        We only send interesting and relevant emails.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="row">
+                <div class="col-md-6">
+                    <p
+                        class="copyright-text mb-0"
+                        [ngClass]="{'text-black': router.url === '/index-2' || router.url === '/index-3' || router.url === '/employers-grid'}"
+                    >
+                        © <span class="fw-bold">Abezo</span> is Proudly Owned by <a href="https://envytheme.com/" target="_blank" class="link style-one fw-bold">EnvyTheme</a>
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <ul class="social-profile text-md-end list-unstyle">
+                        <li><a target="_blank" href="https://www.facebook.com/"><i class="ri-facebook-fill"></i></a></li>
+                        <li><a target="_blank" href="https://www.instagram.com/"><i class="ri-instagram-line"></i></a></li>
+                        <li><a target="_blank" href="https://x.com/"><i class="ri-twitter-fill"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

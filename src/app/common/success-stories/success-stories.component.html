@@ -1,0 +1,479 @@
+<!-- Default -->
+<div
+    class="testimonial-wrap style-one position-relative ptb-100"
+    [ngClass]="{'d-none': router.url === '/index-2'}"
+>
+    <div class="container">
+        <div class="section-title style-one text-center mb-35">
+            <h2 class="fw-medium">
+                <strong>TOP-POSITIONEN</strong> SIND VERTRAUENSSACHE Success Stories
+            </h2>
+            <p class="mb-0">
+                Abezo have changed thousands life!
+            </p>
+        </div>
+        <div class="testimonial-slider">
+            <owl-carousel-o [options]="testimonialSlides">
+                <ng-template carouselSlide>
+                    <div class="testimonial-card style-one bg-gray round-20">
+                        <div class="testimonial-header d-flex align-items-center justify-content-between">
+                            <img src="img/clients/trustpilot.png" alt="Image">
+                            <div class="ratings d-flex align-items-center justify-content-md-end">
+                                <span class="fs-18 fw-bold text-title">5.0</span>
+                                <ul class="rating list-unstyle">
+                                    <li><i class="ri-star-fill"></i></li>
+                                    <li><i class="ri-star-fill"></i></li>
+                                    <li><i class="ri-star-fill"></i></li>
+                                    <li><i class="ri-star-fill"></i></li>
+                                    <li><i class="ri-star-fill"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="client-quote fw-medium text-title">"When you want to create a business bigger than yourself, you need a lot of help. That's what Abezo does for you tremendiously.”</p>
+                        <h6 class="client-info fs-16">John Watson, <span class="fs-14 text-paraThree fw-normal">Marketing Chief at Solit IT</span></h6>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="testimonial-card style-one bg-gray round-20">
+                        <div class="testimonial-header d-flex align-items-center justify-content-between">
+                            <img src="img/clients/trustpilot.png" alt="Image">
+                            <div class="ratings d-flex align-items-center justify-content-md-end">
+                                <span class="fs-18 fw-bold text-title">5.0</span>
+                                <ul class="rating list-unstyle">
+                                    <li><i class="ri-star-fill"></i></li>
+                                    <li><i class="ri-star-fill"></i></li>
+                                    <li><i class="ri-star-fill"></i></li>
+                                    <li><i class="ri-star-fill"></i></li>
+                                    <li><i class="ri-star-fill"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="client-quote fw-medium text-title">“Lorem ipsum dolor sit amet consectetur. Felis diam vestibulum massa tincidunt sit pharetra. Dolor viverra justo massa facilisis tortor aliquet. Mauris neque dis et molestie. Elit et adipiscing feugiat adipiscing odio.”</p>
+                        <h6 class="client-info fs-16">Jenny Angela,<span class="fs-14 text-paraThree fw-normal"> CEO at Medizo</span></h6>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="testimonial-card style-one bg-gray round-20">
+                        <div class="testimonial-header d-flex align-items-center justify-content-between">
+                            <img src="img/clients/trustpilot.png" alt="Image">
+                            <div class="ratings d-flex align-items-center justify-content-md-end">
+                                <span class="fs-18 fw-bold text-title">5.0</span>
+                                <ul class="rating list-unstyle">
+                                    <li><i class="ri-star-fill"></i></li>
+                                    <li><i class="ri-star-fill"></i></li>
+                                    <li><i class="ri-star-fill"></i></li>
+                                    <li><i class="ri-star-fill"></i></li>
+                                    <li><i class="ri-star-fill"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="client-quote fw-medium text-title">"When you want to create a business bigger than yourself, you need a lot of help. That's what Abezo does for you tremendiously.”</p>
+                        <h6 class="client-info fs-16">John Watson, <span class="fs-14 text-paraThree fw-normal">Accounts Manager at Bistro IT</span></h6>
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+    </div>
+</div>
+
+<!-- Only for Home Demo - 2 -->
+ <!--
+<div
+    class="testimonial-wrap style-two bg_dark position-relative ptb-100"
+    *ngIf="router.url === '/index-2'"
+>
+    <div class="container">
+        <div class="section-title style-two text-center mb-35">
+            <span class="fs-14 text-grayColorTwo fw-normal" style="font-size: 40PX;"><strong>Unser Team </strong></span>
+            <p class="text-grayTwo mb-0">
+
+            </p>
+        </div>
+        <div class="testimonial-slider">
+            <owl-carousel-o [options]="testimonialSlides">
+                <ng-template carouselSlide>
+                    <div class="testimonial-card style-two round-10">
+                        <div class="testimonial-header d-flex align-items-center justify-content-between">
+                            <img src="img/OldRessources/mera.jpg" alt="Image" style="height: 400px; margin-left:100px">
+
+
+                        </div>
+                        <div class="ratings d-flex align-items-center justify-content-md-end">
+
+                            <ul class="rating list-unstyle">
+                                <li></li>
+                                <li></li>
+
+                            </ul>
+
+
+                        </div>
+                        <br>
+                        <h4 class="client-info fs-16 text_secondary">
+                             <span class="fs-14 text-grayColorTwo fw-normal">Frau H. Othman, Geschäftsführerin </span>
+                         </h4>
+
+
+
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="testimonial-card style-two round-10">
+                        <div class="testimonial-header d-flex align-items-center justify-content-between">
+                            <img src="img/OldRessources/sii.jpg" alt="Image" style="height: 400px; margin-left:100px">
+
+
+                        </div>
+                        <div class="ratings d-flex align-items-center justify-content-md-end">
+
+                            <ul class="rating list-unstyle">
+                                <li></li>
+                                <li></li>
+
+                            </ul>
+
+
+                        </div>
+                        <br>
+                        <h4 class="client-info fs-16 text_secondary">
+                            <span class="fs-14 text-grayColorTwo fw-normal"> Herr Z. Sellemi, Integrationsmanager </span>
+                  </h4>
+
+
+
+                    </div>
+                </ng-template>
+
+                <ng-template carouselSlide>
+                    <div class="testimonial-card style-two round-10">
+                        <div class="testimonial-header d-flex align-items-center justify-content-between">
+                            <img src="img/OldRessources/img8.jpg" alt="Image" style="height: 400px; margin-left:100px">
+
+
+                        </div>
+                        <div class="ratings d-flex align-items-center justify-content-md-end">
+
+                            <ul class="rating list-unstyle">
+                                <li></li>
+                                <li></li>
+
+                            </ul>
+
+
+                        </div>
+                        <br>
+                        <h4 class="client-info fs-16 text_secondary">
+                            <span class="fs-14 text-grayColorTwo fw-normal">M.Horcheni </span>
+                  </h4>
+
+
+
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="testimonial-card style-two round-10">
+                        <div class="testimonial-header d-flex align-items-center justify-content-between">
+                            <img src="img/OldRessources/img10.jpg" alt="Image" style="height: 400px; margin-left:100px">
+
+
+                        </div>
+                        <div class="ratings d-flex align-items-center justify-content-md-end">
+
+                            <ul class="rating list-unstyle">
+                                <li></li>
+                                <li></li>
+
+                            </ul>
+
+
+                        </div>
+                        <br>
+                        <h4 class="client-info fs-16 text_secondary">
+                            <span class="fs-14 text-grayColorTwo fw-normal">L.Abid </span>
+                        </h4>
+
+
+
+                    </div>
+                </ng-template>
+                 <ng-template carouselSlide>
+                    <div class="testimonial-card style-two round-10">
+                        <div class="testimonial-header d-flex align-items-center justify-content-between">
+                            <img src="img/OldRessources/sayda.jpg" alt="Image" style="height: 400px; margin-left:100px">
+
+
+                        </div>
+                        <div class="ratings d-flex align-items-center justify-content-md-end">
+
+                            <ul class="rating list-unstyle">
+                                <li></li>
+                                <li></li>
+
+                            </ul>
+
+
+                        </div>
+                        <br>
+                        <h4 class="client-info fs-16 text_secondary">
+                            <span class="fs-14 text-grayColorTwo fw-normal">S.Jemai </span>
+                        </h4>
+
+
+
+                    </div>
+                </ng-template>
+
+            </owl-carousel-o>
+        </div>
+    </div>
+</div>
+-->
+<!-- partie des images des membres-->
+<div class="container ptb-100">
+    <div class="section-title style-three text-center mb-30">
+        <h2 class="mb-0">
+            Unser Team
+        </h2>
+    </div>
+    <div class="candidate-slider">
+        <owl-carousel-o [options]="candidatesSlides">
+            <ng-template carouselSlide>
+                <div class="candidate-card style-one text-center position-relative index-1 mb-30 transition">
+
+                    <div class="candidate-img rounded-circle">
+                        <img src="img/OldRessources/mera.jpg" alt="Candidate" class="rounded-circle">
+
+                    </div>
+                    <br>
+                    <h3 class="fs-18"><a routerLink="/candidate-details">
+                        Frau H. Othman
+                    </a></h3>
+                    <span class="d-block">
+                        Geschäftsführerin
+                    </span>
+                    <div class="ratings d-inline-flex align-items-center bg-white">
+
+                        <ul class="rating list-unstyle">
+                            <li><i class="ri-star-fill"></i></li>
+                            <li><i class="ri-star-fill"></i></li>
+                            <li><i class="ri-star-fill"></i></li>
+                            <li><i class="ri-star-fill"></i></li>
+                            <li><i class="ri-star-fill"></i></li>
+                        </ul>
+                    </div>
+                    <ul class="job-desc-meta list-unstyle">
+
+                        <li class="fs-14">
+                            <a href="https://wa.me/1234567890" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                    <path d="M13.601 2.399A7.963 7.963 0 0 0 8 0C3.589 0 0 3.589 0 8c0 1.391.355 2.697.974 3.849L0 16l4.151-.974A7.963 7.963 0 0 0 8 16c4.411 0 8-3.589 8-8 0-2.121-.828-4.121-2.399-5.601zM8 14.5c-1.391 0-2.697-.355-3.849-.974L2 14l.474-2.151A7.963 7.963 0 0 1 1.5 8c0-3.589 2.911-6.5 6.5-6.5s6.5 2.911 6.5 6.5-2.911 6.5-6.5 6.5zm3.601-4.399c-.199-.1-1.199-.598-1.399-.698-.199-.1-.399-.1-.598.1-.199.199-.598.698-.698.898-.1.199-.199.199-.399.1-.199-.1-.799-.299-1.498-.898-.549-.499-.898-1.098-.998-1.298-.1-.199 0-.299.1-.399.1-.1.199-.199.299-.299.1-.1.1-.199.1-.299 0-.1-.1-.399-.199-.598-.1-.199-.299-.399-.399-.499-.1-.1-.199-.1-.299-.1-.1 0-.199 0-.299.1-.1.1-.399.299-.598.698-.199.399-.299.798-.199 1.198.1.399.399.898.898 1.498.499.499 1.098.798 1.498.998.399.1.798.1 1.198-.199.199-.1.399-.299.598-.499.1-.1.199-.1.299-.1.1 0 .199 0 .299.1.1.1.399.199.598.299.199.1.399.1.598 0 .199-.1.399-.199.598-.299.199-.1.299-.199.399-.299.1-.1.1-.199.1-.299 0-.1 0-.199-.1-.299z"/>
+                                </svg>
+                                WhatsApp
+                            </a>
+                        </li>
+                        <li class="fs-14">
+                            <a href="mailto:example@example.com">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.708 2.825L15 11.383V5.383zM1 5.383v6l4.708-2.825L1 5.383zM14.708 12H1.292l4.708-2.825L14.708 12z"/>
+                                </svg>
+                                Email
+                            </a>
+                        </li>
+                    </ul>
+                    <a routerLink="/candidate-details" class="btn style-four">
+                        View Profile
+                    </a>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="candidate-card style-one text-center position-relative index-1 mb-30 transition">
+
+                    <div class="candidate-img rounded-circle">
+                        <img src="img/OldRessources/sii.jpg" alt="Candidate" class="rounded-circle">
+                    </div>
+                    <br>
+                    <h3 class="fs-18"><a routerLink="/candidate-details">
+                        Herr Z. Sellemi
+                    </a></h3>
+                    <span class="d-block">
+                        Integrationsmanager
+                    </span>
+                    <div class="ratings d-inline-flex align-items-center bg-white">
+                        <span class="fs-16 fw-bold text-title">
+
+                        </span>
+                        <ul class="rating list-unstyle">
+                            <li><i class="ri-star-fill"></i></li>
+                            <li><i class="ri-star-fill"></i></li>
+                            <li><i class="ri-star-fill"></i></li>
+                            <li><i class="ri-star-fill"></i></li>
+                            <li><i class="ri-star-fill"></i></li>
+                        </ul>
+                    </div>
+                    <ul class="job-desc-meta list-unstyle">
+
+                        <li class="fs-14">
+                            <a href="https://wa.me/1234567890" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                    <path d="M13.601 2.399A7.963 7.963 0 0 0 8 0C3.589 0 0 3.589 0 8c0 1.391.355 2.697.974 3.849L0 16l4.151-.974A7.963 7.963 0 0 0 8 16c4.411 0 8-3.589 8-8 0-2.121-.828-4.121-2.399-5.601zM8 14.5c-1.391 0-2.697-.355-3.849-.974L2 14l.474-2.151A7.963 7.963 0 0 1 1.5 8c0-3.589 2.911-6.5 6.5-6.5s6.5 2.911 6.5 6.5-2.911 6.5-6.5 6.5zm3.601-4.399c-.199-.1-1.199-.598-1.399-.698-.199-.1-.399-.1-.598.1-.199.199-.598.698-.698.898-.1.199-.199.199-.399.1-.199-.1-.799-.299-1.498-.898-.549-.499-.898-1.098-.998-1.298-.1-.199 0-.299.1-.399.1-.1.199-.199.299-.299.1-.1.1-.199.1-.299 0-.1-.1-.399-.199-.598-.1-.199-.299-.399-.399-.499-.1-.1-.199-.1-.299-.1-.1 0-.199 0-.299.1-.1.1-.399.299-.598.698-.199.399-.299.798-.199 1.198.1.399.399.898.898 1.498.499.499 1.098.798 1.498.998.399.1.798.1 1.198-.199.199-.1.399-.299.598-.499.1-.1.199-.1.299-.1.1 0 .199 0 .299.1.1.1.399.199.598.299.199.1.399.1.598 0 .199-.1.399-.199.598-.299.199-.1.299-.199.399-.299.1-.1.1-.199.1-.299 0-.1 0-.199-.1-.299z"/>
+                                </svg>
+                                WhatsApp
+                            </a>
+                        </li>
+                        <li class="fs-14">
+                            <a href="mailto:example@example.com">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.708 2.825L15 11.383V5.383zM1 5.383v6l4.708-2.825L1 5.383zM14.708 12H1.292l4.708-2.825L14.708 12z"/>
+                                </svg>
+                                Email
+                            </a>
+                        </li>
+                    </ul>
+                    <a routerLink="/candidate-details" class="btn style-four">
+                        View Profile
+                    </a>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="candidate-card style-one text-center position-relative index-1 mb-30 transition">
+
+                    <div class="candidate-img rounded-circle">
+                        <img src="img/OldRessources/img8.jpg" alt="Candidate" class="rounded-circle">
+                    </div>
+                    <br>
+                    <h3 class="fs-18"><a routerLink="/candidate-details">
+                        M.Horcheni
+                    </a></h3>
+
+                    <div class="ratings d-inline-flex align-items-center bg-white">
+                        <span class="fs-16 fw-bold text-title">
+
+                        </span>
+                        <ul class="rating list-unstyle">
+                            <li><i class="ri-star-fill"></i></li>
+                            <li><i class="ri-star-fill"></i></li>
+                            <li><i class="ri-star-fill"></i></li>
+                            <li><i class="ri-star-fill"></i></li>
+                            <li><i class="ri-star-fill"></i></li>
+                        </ul>
+                    </div>
+                    <ul class="job-desc-meta list-unstyle">
+
+                        <li class="fs-14">
+                            <a href="https://wa.me/1234567890" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                    <path d="M13.601 2.399A7.963 7.963 0 0 0 8 0C3.589 0 0 3.589 0 8c0 1.391.355 2.697.974 3.849L0 16l4.151-.974A7.963 7.963 0 0 0 8 16c4.411 0 8-3.589 8-8 0-2.121-.828-4.121-2.399-5.601zM8 14.5c-1.391 0-2.697-.355-3.849-.974L2 14l.474-2.151A7.963 7.963 0 0 1 1.5 8c0-3.589 2.911-6.5 6.5-6.5s6.5 2.911 6.5 6.5-2.911 6.5-6.5 6.5zm3.601-4.399c-.199-.1-1.199-.598-1.399-.698-.199-.1-.399-.1-.598.1-.199.199-.598.698-.698.898-.1.199-.199.199-.399.1-.199-.1-.799-.299-1.498-.898-.549-.499-.898-1.098-.998-1.298-.1-.199 0-.299.1-.399.1-.1.199-.199.299-.299.1-.1.1-.199.1-.299 0-.1-.1-.399-.199-.598-.1-.199-.299-.399-.399-.499-.1-.1-.199-.1-.299-.1-.1 0-.199 0-.299.1-.1.1-.399.299-.598.698-.199.399-.299.798-.199 1.198.1.399.399.898.898 1.498.499.499 1.098.798 1.498.998.399.1.798.1 1.198-.199.199-.1.399-.299.598-.499.1-.1.199-.1.299-.1.1 0 .199 0 .299.1.1.1.399.199.598.299.199.1.399.1.598 0 .199-.1.399-.199.598-.299.199-.1.299-.199.399-.299.1-.1.1-.199.1-.299 0-.1 0-.199-.1-.299z"/>
+                                </svg>
+                                WhatsApp
+                            </a>
+                        </li>
+                        <li class="fs-14">
+                            <a href="mailto:example@example.com">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.708 2.825L15 11.383V5.383zM1 5.383v6l4.708-2.825L1 5.383zM14.708 12H1.292l4.708-2.825L14.708 12z"/>
+                                </svg>
+                                Email
+                            </a>
+                        </li>
+                    </ul>
+                    <a routerLink="/candidate-details" class="btn style-four">
+                        View Profile
+                    </a>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="candidate-card style-one text-center position-relative index-1 mb-30 transition">
+
+                    <div class="candidate-img rounded-circle">
+                        <img src="img/OldRessources/img10.jpg" alt="Candidate" class="rounded-circle">
+                    </div>
+                    <h3 class="fs-18"><a routerLink="/candidate-details">
+                        L.Abid
+                    </a></h3>
+
+                    <div class="ratings d-inline-flex align-items-center bg-white">
+                        <span class="fs-16 fw-bold text-title">
+
+                        </span>
+                        <ul class="rating list-unstyle">
+                            <li><i class="ri-star-fill"></i></li>
+                            <li><i class="ri-star-fill"></i></li>
+                            <li><i class="ri-star-fill"></i></li>
+                            <li><i class="ri-star-fill"></i></li>
+                            <li><i class="ri-star-fill"></i></li>
+                        </ul>
+                    </div>
+                    <ul class="job-desc-meta list-unstyle">
+
+                        <li class="fs-14">
+                            <a href="https://wa.me/1234567890" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                    <path d="M13.601 2.399A7.963 7.963 0 0 0 8 0C3.589 0 0 3.589 0 8c0 1.391.355 2.697.974 3.849L0 16l4.151-.974A7.963 7.963 0 0 0 8 16c4.411 0 8-3.589 8-8 0-2.121-.828-4.121-2.399-5.601zM8 14.5c-1.391 0-2.697-.355-3.849-.974L2 14l.474-2.151A7.963 7.963 0 0 1 1.5 8c0-3.589 2.911-6.5 6.5-6.5s6.5 2.911 6.5 6.5-2.911 6.5-6.5 6.5zm3.601-4.399c-.199-.1-1.199-.598-1.399-.698-.199-.1-.399-.1-.598.1-.199.199-.598.698-.698.898-.1.199-.199.199-.399.1-.199-.1-.799-.299-1.498-.898-.549-.499-.898-1.098-.998-1.298-.1-.199 0-.299.1-.399.1-.1.199-.199.299-.299.1-.1.1-.199.1-.299 0-.1-.1-.399-.199-.598-.1-.199-.299-.399-.399-.499-.1-.1-.199-.1-.299-.1-.1 0-.199 0-.299.1-.1.1-.399.299-.598.698-.199.399-.299.798-.199 1.198.1.399.399.898.898 1.498.499.499 1.098.798 1.498.998.399.1.798.1 1.198-.199.199-.1.399-.299.598-.499.1-.1.199-.1.299-.1.1 0 .199 0 .299.1.1.1.399.199.598.299.199.1.399.1.598 0 .199-.1.399-.199.598-.299.199-.1.299-.199.399-.299.1-.1.1-.199.1-.299 0-.1 0-.199-.1-.299z"/>
+                                </svg>
+                                WhatsApp
+                            </a>
+                        </li>
+                        <li class="fs-14">
+                            <a href="mailto:example@example.com">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.708 2.825L15 11.383V5.383zM1 5.383v6l4.708-2.825L1 5.383zM14.708 12H1.292l4.708-2.825L14.708 12z"/>
+                                </svg>
+                                Email
+                            </a>
+                        </li>
+                    </ul>
+                    <a routerLink="/candidate-details" class="btn style-four">
+                        View Profile
+                    </a>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="candidate-card style-one text-center position-relative index-1 mb-30 transition">
+                  
+                    <div class="candidate-img rounded-circle">
+                        <img src="img/OldRessources/sayda.jpg" alt="Candidate" class="rounded-circle">
+                    </div>
+                    <h3 class="fs-18"><a routerLink="/candidate-details">
+                        S.Jemai
+                    </a></h3>
+
+                    <div class="ratings d-inline-flex align-items-center bg-white">
+                        <span class="fs-16 fw-bold text-title">
+
+                        </span>
+                        <ul class="rating list-unstyle">
+                            <li><i class="ri-star-fill"></i></li>
+                            <li><i class="ri-star-fill"></i></li>
+                            <li><i class="ri-star-fill"></i></li>
+                            <li><i class="ri-star-fill"></i></li>
+                            <li><i class="ri-star-fill"></i></li>
+                        </ul>
+                    </div>
+                    <ul class="job-desc-meta list-unstyle">
+
+                        <li class="fs-14">
+                            <a href="https://wa.me/1234567890" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                    <path d="M13.601 2.399A7.963 7.963 0 0 0 8 0C3.589 0 0 3.589 0 8c0 1.391.355 2.697.974 3.849L0 16l4.151-.974A7.963 7.963 0 0 0 8 16c4.411 0 8-3.589 8-8 0-2.121-.828-4.121-2.399-5.601zM8 14.5c-1.391 0-2.697-.355-3.849-.974L2 14l.474-2.151A7.963 7.963 0 0 1 1.5 8c0-3.589 2.911-6.5 6.5-6.5s6.5 2.911 6.5 6.5-2.911 6.5-6.5 6.5zm3.601-4.399c-.199-.1-1.199-.598-1.399-.698-.199-.1-.399-.1-.598.1-.199.199-.598.698-.698.898-.1.199-.199.199-.399.1-.199-.1-.799-.299-1.498-.898-.549-.499-.898-1.098-.998-1.298-.1-.199 0-.299.1-.399.1-.1.199-.199.299-.299.1-.1.1-.199.1-.299 0-.1-.1-.399-.199-.598-.1-.199-.299-.399-.399-.499-.1-.1-.199-.1-.299-.1-.1 0-.199 0-.299.1-.1.1-.399.299-.598.698-.199.399-.299.798-.199 1.198.1.399.399.898.898 1.498.499.499 1.098.798 1.498.998.399.1.798.1 1.198-.199.199-.1.399-.299.598-.499.1-.1.199-.1.299-.1.1 0 .199 0 .299.1.1.1.399.199.598.299.199.1.399.1.598 0 .199-.1.399-.199.598-.299.199-.1.299-.199.399-.299.1-.1.1-.199.1-.299 0-.1 0-.199-.1-.299z"/>
+                                </svg>
+                                WhatsApp
+                            </a>
+                        </li>
+                        <li class="fs-14">
+                            <a href="mailto:example@example.com">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.708 2.825L15 11.383V5.383zM1 5.383v6l4.708-2.825L1 5.383zM14.708 12H1.292l4.708-2.825L14.708 12z"/>
+                                </svg>
+                                Email
+                            </a>
+                        </li>
+                    </ul>
+                    <a routerLink="/candidate-details" class="btn style-four">
+                        View Profile
+                    </a>
+                </div>
+            </ng-template>
+
+        </owl-carousel-o>
+    </div>
+</div>

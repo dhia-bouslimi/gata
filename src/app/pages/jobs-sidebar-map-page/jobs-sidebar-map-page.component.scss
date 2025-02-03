@@ -1,0 +1,132 @@
+@import "../../common/featured-jobs/featured-jobs.component";
+
+//theme pour les zones de texte
+.testimonial-card {
+    .testimonial-header {
+        padding-bottom: 22px;
+
+        img {
+            display: inline !important;
+            width: auto !important;
+        }
+        .ratings {
+            span {
+                margin-right: 5px;
+            }
+            ul {
+                position: relative;
+                top: -1px;
+
+                li {
+                    margin-right: 2px;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    i {
+                        font-size: 17px;
+                        color: var(--primaryColor);
+                    }
+                }
+            }
+        }
+    }
+    .client-quote {
+        font-size: 14px;
+        line-height: 22px;
+        margin: 26px 0 42px;
+    }
+    .client-info {
+        span {
+            margin-left: 5px;
+            letter-spacing: 0.04em;
+        }
+    }
+    &.style-one {
+        padding: 40px 30px;
+
+        .testimonial-header {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+        }
+    }
+    &.style-two {
+        padding: 40px 30px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+
+        .testimonial-header {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .client-info {
+            span {
+                color: var(--grayColorTwo);
+            }
+        }
+    }
+}
+::ng-deep {
+    .testimonial-wrap {
+        &.style-one {
+            .owl-theme {
+                .owl-nav {
+                    margin-top: 0;
+
+                    [class*=owl-] {
+                        top: 50%;
+                        margin: 0;
+                        padding: 0;
+                        left: -40px;
+                        width: auto;
+                        height: auto;
+                        border-radius: 0;
+                        position: absolute;
+                        transform: translateY(-50%);
+                        background-color: transparent;
+
+                        &.owl-next {
+                            left: auto;
+                            right: -40px;
+                        }
+                    }
+                }
+            }
+
+        }
+        &.style-two {
+            .owl-theme {
+                .owl-nav {
+                    margin-top: 0;
+
+                    [class*=owl-] {
+                        top: 50%;
+                        margin: 0;
+                        padding: 0;
+                        left: -40px;
+                        width: auto;
+                        height: auto;
+                        border-radius: 0;
+                        filter: invert(1);
+                        position: absolute;
+                        transform: translateY(-50%);
+                        background-color: transparent;
+
+                        &.owl-next {
+                            left: auto;
+                            right: -40px;
+                        }
+                    }
+                }
+            }
+            .rating {
+                list-style: none;
+                padding-left: 30px;
+                margin: 0;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+
+        }
+    }
+}
+/************ Fin ************/
